@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_16ebf2c9fccb453b28f5bbd92fbc097e {
+                #map_9cc28d0af29cae8652ab4bc8f6c3b152 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -68,6 +68,17 @@
                 to { transform: rotate(360deg); }
             }
         </style>
+    
+    
+        <div style="
+            position: absolute;
+            bottom: 10px;
+            left: 5px;
+            z-index: 1000;
+            opacity: 1;
+        ">
+            <img src="https://i.imgur.com/MbQSbcX.png" style="width: 120px; height: auto; border-radius: 5px;">
+        </div>
     
     
         <script type="text/javascript">
@@ -177,8 +188,8 @@
                         <b style="color: ${currentModeColor};">Date and Time:</b> ${dateandtime}<br>
                         <b style="color: ${currentModeColor};">Intensity:</b> ${intensity}<br>
                         <img id="earthquake-image" src="${imageUrl}" alt="Earthquake Image" style="width: 100%; height: auto; border-radius: 10px; margin-top: 10px;" />
-                        <button onclick="openModal('${imageUrl}')" style="margin-top: 10px; display: block; width: 100%; background-color: #008348; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Enlarge Image</button>
-                        <button onclick="openEnglishModal('${engUrl}')" style="margin-top: 10px; display: block; width: 100%; background-color: #FEBE10; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">English Option</button>
+                        <button onclick="openModal('${imageUrl}')" style="margin-top: 10px; display: block; width: 100%; background-color: #008348; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Enlarge Image (Localized)</button>
+                        <button onclick="openEnglishModal('${engUrl}')" style="margin-top: 10px; display: block; width: 100%; background-color: #FEBE10; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Enlarge Image (English)</button>
                     `;
                 }
 
@@ -248,7 +259,7 @@
         <div id="dark-mode-toggle" style=" 
             position: fixed; 
             bottom: 20px; 
-            left: 10px; 
+            left: 100px; 
             z-index: 1001; 
             background-color: #333; 
             color: white; 
@@ -305,14 +316,14 @@
         </script>
     
     
-            <div class="folium-map" id="map_16ebf2c9fccb453b28f5bbd92fbc097e" ></div>
+            <div class="folium-map" id="map_9cc28d0af29cae8652ab4bc8f6c3b152" ></div>
         
 </body>
 <script>
     
     
-            var map_16ebf2c9fccb453b28f5bbd92fbc097e = L.map(
-                "map_16ebf2c9fccb453b28f5bbd92fbc097e",
+            var map_9cc28d0af29cae8652ab4bc8f6c3b152 = L.map(
+                "map_9cc28d0af29cae8652ab4bc8f6c3b152",
                 {
                     center: [11.6849465409, 123.019128614],
                     crs: L.CRS.EPSG3857,
@@ -326,1071 +337,1071 @@
 
         
     
-            var tile_layer_29c58f506de8cab772b2fc6409aa9bf4 = L.tileLayer(
+            var tile_layer_7aae06d0d85c1bd37a03330f3ac39b91 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_29c58f506de8cab772b2fc6409aa9bf4.addTo(map_16ebf2c9fccb453b28f5bbd92fbc097e);
+            tile_layer_7aae06d0d85c1bd37a03330f3ac39b91.addTo(map_9cc28d0af29cae8652ab4bc8f6c3b152);
         
     
-            var marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e = L.markerClusterGroup(
+            var marker_cluster_2fde6a38bf8bf00d3016a635981855c1 = L.markerClusterGroup(
                 {}
             );
         
     
-            var circle_marker_e9b4110dcb1050e6089a1f5039279f3b = L.circleMarker(
+            var circle_marker_9ecb901716ce0eb8e23cc793818274d7 = L.circleMarker(
                 [6.828828829, 124.8687246],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_655e37a7d45537d3d877189ba4067b1f = L.popup({"maxWidth": 300});
+        var popup_1623478bb834c7642adca660f2211a1d = L.popup({"maxWidth": 300});
 
         
             
-                var html_a4a2c5f47c1481e939778452fd9cf228 = $(`<div id="html_a4a2c5f47c1481e939778452fd9cf228" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.4<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 12/3/2023 6:37<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('7.4', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '12/3/2023 6:37', 'I-VII ', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_655e37a7d45537d3d877189ba4067b1f.setContent(html_a4a2c5f47c1481e939778452fd9cf228);
+                var html_e17d23965aa671e608f31d5ef7c57e6b = $(`<div id="html_e17d23965aa671e608f31d5ef7c57e6b" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.4<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 12/3/2023 6:37<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('7.4', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '12/3/2023 6:37', 'I-VII ', 'https://i.imgur.com/8Yuwrxq.png', 'https://i.imgur.com/8Yuwrxq.png')">Click to see more details</a>         </div>`)[0];
+                popup_1623478bb834c7642adca660f2211a1d.setContent(html_e17d23965aa671e608f31d5ef7c57e6b);
             
         
 
-        circle_marker_e9b4110dcb1050e6089a1f5039279f3b.bindPopup(popup_655e37a7d45537d3d877189ba4067b1f)
+        circle_marker_9ecb901716ce0eb8e23cc793818274d7.bindPopup(popup_1623478bb834c7642adca660f2211a1d)
         ;
 
         
     
     
-            var circle_marker_4363b003525d59f987710af81539cb10 = L.circleMarker(
+            var circle_marker_8d0babe2085bd9d9693bdf87af1e4e6c = L.circleMarker(
                 [7.0, 125.0878821],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_98fe568028fa6829f33705d963ca33ed = L.popup({"maxWidth": 300});
+        var popup_06f612eca39ae8744a33ce69e302d5c7 = L.popup({"maxWidth": 300});
 
         
             
-                var html_532984868eabec1dc3094a3b1d48cf49 = $(`<div id="html_532984868eabec1dc3094a3b1d48cf49" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.4<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 12/3/2023 6:37<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('7.4', '7.0, 125.0878821', 7.0, 125.0878821, '12/3/2023 6:37', 'I-VII ', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_98fe568028fa6829f33705d963ca33ed.setContent(html_532984868eabec1dc3094a3b1d48cf49);
+                var html_2921e5bc0d2daf5ac730aa0e353cbdf0 = $(`<div id="html_2921e5bc0d2daf5ac730aa0e353cbdf0" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.4<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 12/3/2023 6:37<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('7.4', '7.0, 125.0878821', 7.0, 125.0878821, '12/3/2023 6:37', 'I-VII ', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_06f612eca39ae8744a33ce69e302d5c7.setContent(html_2921e5bc0d2daf5ac730aa0e353cbdf0);
             
         
 
-        circle_marker_4363b003525d59f987710af81539cb10.bindPopup(popup_98fe568028fa6829f33705d963ca33ed)
+        circle_marker_8d0babe2085bd9d9693bdf87af1e4e6c.bindPopup(popup_06f612eca39ae8744a33ce69e302d5c7)
         ;
 
         
     
     
-            var circle_marker_21f9615f9bc1a7600d4f31b8dd0af2a9 = L.circleMarker(
+            var circle_marker_752c9d2c48b95bbd7e5a9aa5de3b14ce = L.circleMarker(
                 [13.57657658, 123.2585666],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_dc559003cc08af91f70755c08b3bbc34 = L.popup({"maxWidth": 300});
+        var popup_151d074a7ed288917900f856deb7e692 = L.popup({"maxWidth": 300});
 
         
             
-                var html_996e0ca135ff048fe1fbd39df46f39f2 = $(`<div id="html_996e0ca135ff048fe1fbd39df46f39f2" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.4<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 12/3/2023 6:37<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('7.4', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '12/3/2023 6:37', 'I-VII ', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_dc559003cc08af91f70755c08b3bbc34.setContent(html_996e0ca135ff048fe1fbd39df46f39f2);
+                var html_002931e2928a1872ab8a5ad096a2f5b8 = $(`<div id="html_002931e2928a1872ab8a5ad096a2f5b8" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.4<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 12/3/2023 6:37<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('7.4', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '12/3/2023 6:37', 'I-VII ', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_151d074a7ed288917900f856deb7e692.setContent(html_002931e2928a1872ab8a5ad096a2f5b8);
             
         
 
-        circle_marker_21f9615f9bc1a7600d4f31b8dd0af2a9.bindPopup(popup_dc559003cc08af91f70755c08b3bbc34)
+        circle_marker_752c9d2c48b95bbd7e5a9aa5de3b14ce.bindPopup(popup_151d074a7ed288917900f856deb7e692)
         ;
 
         
     
     
-            var circle_marker_7489016acd1b53fb5b41741f20c2039e = L.circleMarker(
+            var circle_marker_7125c37f562fd2a1409ef11d708265fe = L.circleMarker(
                 [8.5454, 125.9427],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_8eb091e2143b2abdb7b49a7f745d2a6a = L.popup({"maxWidth": 300});
+        var popup_73b4ab3680c60d0ea16cbf3210252227 = L.popup({"maxWidth": 300});
 
         
             
-                var html_6143a1434fb687b8c362abd4cd3759ea = $(`<div id="html_6143a1434fb687b8c362abd4cd3759ea" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 8.5454, 125.9427<br>             <b>Latitude:</b> 8.5454<br>             <b>Longitude:</b> 125.9427<br>             <b>Date and Time:</b> 11/18/2023 0:14<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '8.5454, 125.9427', 8.5454, 125.9427, '11/18/2023 0:14', 'I-VII ', 'https://www.collinsdictionary.com/images/full/apple_158989157.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_8eb091e2143b2abdb7b49a7f745d2a6a.setContent(html_6143a1434fb687b8c362abd4cd3759ea);
+                var html_1945a0d09d2a8afa0b341c5dbf17c20e = $(`<div id="html_1945a0d09d2a8afa0b341c5dbf17c20e" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 8.5454, 125.9427<br>             <b>Latitude:</b> 8.5454<br>             <b>Longitude:</b> 125.9427<br>             <b>Date and Time:</b> 11/18/2023 0:14<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '8.5454, 125.9427', 8.5454, 125.9427, '11/18/2023 0:14', 'I-VII ', 'https://www.collinsdictionary.com/images/full/apple_158989157.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_73b4ab3680c60d0ea16cbf3210252227.setContent(html_1945a0d09d2a8afa0b341c5dbf17c20e);
             
         
 
-        circle_marker_7489016acd1b53fb5b41741f20c2039e.bindPopup(popup_8eb091e2143b2abdb7b49a7f745d2a6a)
+        circle_marker_7125c37f562fd2a1409ef11d708265fe.bindPopup(popup_73b4ab3680c60d0ea16cbf3210252227)
         ;
 
         
     
     
-            var circle_marker_6384ea80fdf683ec40d2563351f647f1 = L.circleMarker(
+            var circle_marker_0a12b15789e5ce6cf8bd4451f4d7978c = L.circleMarker(
                 [13.57657658, 123.2585666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_6e74b4ea8ddb6e23b2bc03b7f0d082a0 = L.popup({"maxWidth": 300});
+        var popup_4dc482b29f25b8ee2a51cfb1915fc4c7 = L.popup({"maxWidth": 300});
 
         
             
-                var html_a672f6baa26b7d4fb6cba2361140483b = $(`<div id="html_a672f6baa26b7d4fb6cba2361140483b" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 11/18/2023 0:14<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '11/18/2023 0:14', 'I-VII ', 'https://www.collinsdictionary.com/images/full/apple_158989157.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_6e74b4ea8ddb6e23b2bc03b7f0d082a0.setContent(html_a672f6baa26b7d4fb6cba2361140483b);
+                var html_4bed39478b5be9e73230b34c578ea04c = $(`<div id="html_4bed39478b5be9e73230b34c578ea04c" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 11/18/2023 0:14<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '11/18/2023 0:14', 'I-VII ', 'https://www.collinsdictionary.com/images/full/apple_158989157.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_4dc482b29f25b8ee2a51cfb1915fc4c7.setContent(html_4bed39478b5be9e73230b34c578ea04c);
             
         
 
-        circle_marker_6384ea80fdf683ec40d2563351f647f1.bindPopup(popup_6e74b4ea8ddb6e23b2bc03b7f0d082a0)
+        circle_marker_0a12b15789e5ce6cf8bd4451f4d7978c.bindPopup(popup_4dc482b29f25b8ee2a51cfb1915fc4c7)
         ;
 
         
     
     
-            var circle_marker_f5e0d5c6e42d2b77ffd1e7bf7e9a8bf1 = L.circleMarker(
+            var circle_marker_229fb4cc82a14f9ecd6052c117af700d = L.circleMarker(
                 [7.0, 125.0878821],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_f20c67f45d4262fb5f67c9b9f5f09ba5 = L.popup({"maxWidth": 300});
+        var popup_aa723ebb6948cd526a06ea165a02786e = L.popup({"maxWidth": 300});
 
         
             
-                var html_e83025afa544e7961c35ea956cf82ff6 = $(`<div id="html_e83025afa544e7961c35ea956cf82ff6" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 11/18/2023 0:14<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '7.0, 125.0878821', 7.0, 125.0878821, '11/18/2023 0:14', 'I-VII ', 'https://www.collinsdictionary.com/images/full/apple_158989157.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_f20c67f45d4262fb5f67c9b9f5f09ba5.setContent(html_e83025afa544e7961c35ea956cf82ff6);
+                var html_712c6718bc05876e884302459b5196af = $(`<div id="html_712c6718bc05876e884302459b5196af" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 11/18/2023 0:14<br>             <b>Intensity:</b> I-VII <br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '7.0, 125.0878821', 7.0, 125.0878821, '11/18/2023 0:14', 'I-VII ', 'https://www.collinsdictionary.com/images/full/apple_158989157.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_aa723ebb6948cd526a06ea165a02786e.setContent(html_712c6718bc05876e884302459b5196af);
             
         
 
-        circle_marker_f5e0d5c6e42d2b77ffd1e7bf7e9a8bf1.bindPopup(popup_f20c67f45d4262fb5f67c9b9f5f09ba5)
+        circle_marker_229fb4cc82a14f9ecd6052c117af700d.bindPopup(popup_aa723ebb6948cd526a06ea165a02786e)
         ;
 
         
     
     
-            var circle_marker_318f25668034b905cb2d8bcae7469db5 = L.circleMarker(
+            var circle_marker_11f12708e75cdd9525d626a47b74f019 = L.circleMarker(
                 [7.0, 125.0878821],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_1abc6b53540627bac6c6b2ce7aa92aad = L.popup({"maxWidth": 300});
+        var popup_4f3233bcfe07f91a4a3025328ec8d0de = L.popup({"maxWidth": 300});
 
         
             
-                var html_64f63396773aed72c80d4a039f9da8b3 = $(`<div id="html_64f63396773aed72c80d4a039f9da8b3" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.6<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 12/4/2023 2:35<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.6', '7.0, 125.0878821', 7.0, 125.0878821, '12/4/2023 2:35', 'I-V', 'https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_1abc6b53540627bac6c6b2ce7aa92aad.setContent(html_64f63396773aed72c80d4a039f9da8b3);
+                var html_5ea08dcbe80467b5f4c7e369ad57d54e = $(`<div id="html_5ea08dcbe80467b5f4c7e369ad57d54e" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.6<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 12/4/2023 2:35<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.6', '7.0, 125.0878821', 7.0, 125.0878821, '12/4/2023 2:35', 'I-V', 'https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_4f3233bcfe07f91a4a3025328ec8d0de.setContent(html_5ea08dcbe80467b5f4c7e369ad57d54e);
             
         
 
-        circle_marker_318f25668034b905cb2d8bcae7469db5.bindPopup(popup_1abc6b53540627bac6c6b2ce7aa92aad)
+        circle_marker_11f12708e75cdd9525d626a47b74f019.bindPopup(popup_4f3233bcfe07f91a4a3025328ec8d0de)
         ;
 
         
     
     
-            var circle_marker_3a52bf80773e2278e762309422160c1c = L.circleMarker(
+            var circle_marker_5713a5f7887c3be67be7667aae620ff5 = L.circleMarker(
                 [13.57657658, 123.2585666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_6d72b1365054e8ad1d23146abfa0cc90 = L.popup({"maxWidth": 300});
+        var popup_8a190f19faf661bbef975cad59032a5f = L.popup({"maxWidth": 300});
 
         
             
-                var html_4b2dcb964ec86116762164f82a8d63cb = $(`<div id="html_4b2dcb964ec86116762164f82a8d63cb" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.6<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 12/4/2023 2:35<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.6', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '12/4/2023 2:35', 'I-V', 'https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_6d72b1365054e8ad1d23146abfa0cc90.setContent(html_4b2dcb964ec86116762164f82a8d63cb);
+                var html_c64950d01cd9b68ead4ceef15661ea2d = $(`<div id="html_c64950d01cd9b68ead4ceef15661ea2d" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.6<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 12/4/2023 2:35<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.6', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '12/4/2023 2:35', 'I-V', 'https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_8a190f19faf661bbef975cad59032a5f.setContent(html_c64950d01cd9b68ead4ceef15661ea2d);
             
         
 
-        circle_marker_3a52bf80773e2278e762309422160c1c.bindPopup(popup_6d72b1365054e8ad1d23146abfa0cc90)
+        circle_marker_5713a5f7887c3be67be7667aae620ff5.bindPopup(popup_8a190f19faf661bbef975cad59032a5f)
         ;
 
         
     
     
-            var circle_marker_1add8de2885ffeddaa455ac4cb926465 = L.circleMarker(
+            var circle_marker_516296a601c0aeeed1247ec05616a941 = L.circleMarker(
                 [6.828828829, 124.8687246],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_c527913d06c8768b78e82479cf5ceef4 = L.popup({"maxWidth": 300});
+        var popup_7c8990fd9ad4644923853ccaacedda5e = L.popup({"maxWidth": 300});
 
         
             
-                var html_c220c845cf8818b7c0a6e55e10d4bc07 = $(`<div id="html_c220c845cf8818b7c0a6e55e10d4bc07" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.6<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 12/4/2023 2:35<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.6', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '12/4/2023 2:35', 'I-V', 'https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_c527913d06c8768b78e82479cf5ceef4.setContent(html_c220c845cf8818b7c0a6e55e10d4bc07);
+                var html_78f990ad57086753f0daaf0c5f08f38a = $(`<div id="html_78f990ad57086753f0daaf0c5f08f38a" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.6<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 12/4/2023 2:35<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.6', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '12/4/2023 2:35', 'I-V', 'https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_7c8990fd9ad4644923853ccaacedda5e.setContent(html_78f990ad57086753f0daaf0c5f08f38a);
             
         
 
-        circle_marker_1add8de2885ffeddaa455ac4cb926465.bindPopup(popup_c527913d06c8768b78e82479cf5ceef4)
+        circle_marker_516296a601c0aeeed1247ec05616a941.bindPopup(popup_7c8990fd9ad4644923853ccaacedda5e)
         ;
 
         
     
     
-            var circle_marker_00949e3e94e895263f6fb528a594927e = L.circleMarker(
+            var circle_marker_66dd83269836e973cdf1775f4c4b7e87 = L.circleMarker(
                 [16.4061, 120.5753],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_d33704efd9516bda387c9ebbf6057b14 = L.popup({"maxWidth": 300});
+        var popup_08e67a6b8e9162b670520da99303386f = L.popup({"maxWidth": 300});
 
         
             
-                var html_f80b0f7cd4daa7ac6937968236d544fd = $(`<div id="html_f80b0f7cd4daa7ac6937968236d544fd" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '16.4061, 120.5753', 16.4061, 120.5753, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_d33704efd9516bda387c9ebbf6057b14.setContent(html_f80b0f7cd4daa7ac6937968236d544fd);
+                var html_9ec4a22c75f2755b173b01d63661a0f6 = $(`<div id="html_9ec4a22c75f2755b173b01d63661a0f6" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '16.4061, 120.5753', 16.4061, 120.5753, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_08e67a6b8e9162b670520da99303386f.setContent(html_9ec4a22c75f2755b173b01d63661a0f6);
             
         
 
-        circle_marker_00949e3e94e895263f6fb528a594927e.bindPopup(popup_d33704efd9516bda387c9ebbf6057b14)
+        circle_marker_66dd83269836e973cdf1775f4c4b7e87.bindPopup(popup_08e67a6b8e9162b670520da99303386f)
         ;
 
         
     
     
-            var circle_marker_70c8a1d63adfe0a3203b2e70475d806e = L.circleMarker(
+            var circle_marker_9f3e5cc29f6efe22fe35c7ac5352fd14 = L.circleMarker(
                 [14.0852, 121.3402],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_8fc68cb270b7a9ab1c62d042c1e42113 = L.popup({"maxWidth": 300});
+        var popup_8cce52bcd98c868be2f06fdb6c9dc9d8 = L.popup({"maxWidth": 300});
 
         
             
-                var html_786e878a2e16d6dc51907ae3cc6d01c4 = $(`<div id="html_786e878a2e16d6dc51907ae3cc6d01c4" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.0852, 121.3402', 14.0852, 121.3402, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_8fc68cb270b7a9ab1c62d042c1e42113.setContent(html_786e878a2e16d6dc51907ae3cc6d01c4);
+                var html_c14772581660165285b6e55245e0ed41 = $(`<div id="html_c14772581660165285b6e55245e0ed41" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.0852, 121.3402', 14.0852, 121.3402, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_8cce52bcd98c868be2f06fdb6c9dc9d8.setContent(html_c14772581660165285b6e55245e0ed41);
             
         
 
-        circle_marker_70c8a1d63adfe0a3203b2e70475d806e.bindPopup(popup_8fc68cb270b7a9ab1c62d042c1e42113)
+        circle_marker_9f3e5cc29f6efe22fe35c7ac5352fd14.bindPopup(popup_8cce52bcd98c868be2f06fdb6c9dc9d8)
         ;
 
         
     
     
-            var circle_marker_993c3f1d57d8508237a42cfb020b3d67 = L.circleMarker(
+            var circle_marker_47ab52f79e035ba31b1e79aef20e6ca4 = L.circleMarker(
                 [14.6456, 121.0689],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_bf53a02db096a1881f6d972469a07ba4 = L.popup({"maxWidth": 300});
+        var popup_ac1df22b9a548e7b2e13d3c07c2f8ad6 = L.popup({"maxWidth": 300});
 
         
             
-                var html_3acda3f52bd165f77f5fc248699e0f03 = $(`<div id="html_3acda3f52bd165f77f5fc248699e0f03" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.6456, 121.0689', 14.6456, 121.0689, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_bf53a02db096a1881f6d972469a07ba4.setContent(html_3acda3f52bd165f77f5fc248699e0f03);
+                var html_70e8773c00a237ecaea0c0603c1b3d10 = $(`<div id="html_70e8773c00a237ecaea0c0603c1b3d10" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.6456, 121.0689', 14.6456, 121.0689, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_ac1df22b9a548e7b2e13d3c07c2f8ad6.setContent(html_70e8773c00a237ecaea0c0603c1b3d10);
             
         
 
-        circle_marker_993c3f1d57d8508237a42cfb020b3d67.bindPopup(popup_bf53a02db096a1881f6d972469a07ba4)
+        circle_marker_47ab52f79e035ba31b1e79aef20e6ca4.bindPopup(popup_ac1df22b9a548e7b2e13d3c07c2f8ad6)
         ;
 
         
     
     
-            var circle_marker_30dd8fc1707599795e23c3dd41715c19 = L.circleMarker(
+            var circle_marker_1cb11005b68b41618271e90c2fc6ab5b = L.circleMarker(
                 [6.828828829, 124.8687246],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_0a9c0998a9b94ee847321fa35802a9fe = L.popup({"maxWidth": 300});
+        var popup_dbe3d2f63a134612ad1bad9be9854e9d = L.popup({"maxWidth": 300});
 
         
             
-                var html_db111f419ddc1b91a6d975240d9752df = $(`<div id="html_db111f419ddc1b91a6d975240d9752df" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_0a9c0998a9b94ee847321fa35802a9fe.setContent(html_db111f419ddc1b91a6d975240d9752df);
+                var html_48698493f085b1dccb03961ffe76b3d9 = $(`<div id="html_48698493f085b1dccb03961ffe76b3d9" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_dbe3d2f63a134612ad1bad9be9854e9d.setContent(html_48698493f085b1dccb03961ffe76b3d9);
             
         
 
-        circle_marker_30dd8fc1707599795e23c3dd41715c19.bindPopup(popup_0a9c0998a9b94ee847321fa35802a9fe)
+        circle_marker_1cb11005b68b41618271e90c2fc6ab5b.bindPopup(popup_dbe3d2f63a134612ad1bad9be9854e9d)
         ;
 
         
     
     
-            var circle_marker_cfd72546aee0ee686e5b451da2614b46 = L.circleMarker(
+            var circle_marker_8d0c58b7f2ee85cb4b7609ea4b77a326 = L.circleMarker(
                 [7.0908, 125.5733],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_5af08835c0580d5c2f9dba57ac53b751 = L.popup({"maxWidth": 300});
+        var popup_494adff68b860a055c8bef2ce2fdb307 = L.popup({"maxWidth": 300});
 
         
             
-                var html_4344e84adabe4c71b4352721afb037b2 = $(`<div id="html_4344e84adabe4c71b4352721afb037b2" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '7.0908, 125.5733', 7.0908, 125.5733, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_5af08835c0580d5c2f9dba57ac53b751.setContent(html_4344e84adabe4c71b4352721afb037b2);
+                var html_830c9dce224821d4bc173019d533e382 = $(`<div id="html_830c9dce224821d4bc173019d533e382" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 1/18/2023 22:06<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '7.0908, 125.5733', 7.0908, 125.5733, '1/18/2023 22:06', 'I-II', 'https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_494adff68b860a055c8bef2ce2fdb307.setContent(html_830c9dce224821d4bc173019d533e382);
             
         
 
-        circle_marker_cfd72546aee0ee686e5b451da2614b46.bindPopup(popup_5af08835c0580d5c2f9dba57ac53b751)
+        circle_marker_8d0c58b7f2ee85cb4b7609ea4b77a326.bindPopup(popup_494adff68b860a055c8bef2ce2fdb307)
         ;
 
         
     
     
-            var circle_marker_d386d2f5176f0cb56aa7aa5c4c4d4de9 = L.circleMarker(
+            var circle_marker_79f23a63e04ef3080745c078090a2cc1 = L.circleMarker(
                 [13.3594, 123.7307],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_09cfa781ffa9b8df8f9ac3075676830d = L.popup({"maxWidth": 300});
+        var popup_b6d3929c812e600bf6851245d5284020 = L.popup({"maxWidth": 300});
 
         
             
-                var html_93f3efbc15b304744474af2212dfa442 = $(`<div id="html_93f3efbc15b304744474af2212dfa442" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 13.3594, 123.7307<br>             <b>Latitude:</b> 13.3594<br>             <b>Longitude:</b> 123.7307<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '13.3594, 123.7307', 13.3594, 123.7307, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_09cfa781ffa9b8df8f9ac3075676830d.setContent(html_93f3efbc15b304744474af2212dfa442);
+                var html_b8ed7e54f4ee88e0d1a0b38278702c21 = $(`<div id="html_b8ed7e54f4ee88e0d1a0b38278702c21" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 13.3594, 123.7307<br>             <b>Latitude:</b> 13.3594<br>             <b>Longitude:</b> 123.7307<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '13.3594, 123.7307', 13.3594, 123.7307, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_b6d3929c812e600bf6851245d5284020.setContent(html_b8ed7e54f4ee88e0d1a0b38278702c21);
             
         
 
-        circle_marker_d386d2f5176f0cb56aa7aa5c4c4d4de9.bindPopup(popup_09cfa781ffa9b8df8f9ac3075676830d)
+        circle_marker_79f23a63e04ef3080745c078090a2cc1.bindPopup(popup_b6d3929c812e600bf6851245d5284020)
         ;
 
         
     
     
-            var circle_marker_f1b796797a2be50177e5d7cf8a0855a1 = L.circleMarker(
+            var circle_marker_64455e78d1efceb5b9b562aadcd1060c = L.circleMarker(
                 [14.4788, 120.8989],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_539f923dc146f87d26574c375eccdb98 = L.popup({"maxWidth": 300});
+        var popup_2356ac8cc450902866fe9f69e3cd7bf5 = L.popup({"maxWidth": 300});
 
         
             
-                var html_790d6aa9dbcec40e6c27302098a3aa51 = $(`<div id="html_790d6aa9dbcec40e6c27302098a3aa51" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 14.4788, 120.8989<br>             <b>Latitude:</b> 14.4788<br>             <b>Longitude:</b> 120.8989<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '14.4788, 120.8989', 14.4788, 120.8989, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_539f923dc146f87d26574c375eccdb98.setContent(html_790d6aa9dbcec40e6c27302098a3aa51);
+                var html_ccb3d2642e639094da6736445cbf4a4b = $(`<div id="html_ccb3d2642e639094da6736445cbf4a4b" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 14.4788, 120.8989<br>             <b>Latitude:</b> 14.4788<br>             <b>Longitude:</b> 120.8989<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '14.4788, 120.8989', 14.4788, 120.8989, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_2356ac8cc450902866fe9f69e3cd7bf5.setContent(html_ccb3d2642e639094da6736445cbf4a4b);
             
         
 
-        circle_marker_f1b796797a2be50177e5d7cf8a0855a1.bindPopup(popup_539f923dc146f87d26574c375eccdb98)
+        circle_marker_64455e78d1efceb5b9b562aadcd1060c.bindPopup(popup_2356ac8cc450902866fe9f69e3cd7bf5)
         ;
 
         
     
     
-            var circle_marker_68adc02a9557b7c737c5749c9ad32ca2 = L.circleMarker(
+            var circle_marker_01ba8d42c4770b9a86578d34f3cf02ce = L.circleMarker(
                 [7.0, 125.0878821],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_82c3d6c632c1b65f987197a92a675e71 = L.popup({"maxWidth": 300});
+        var popup_c13e361691388f5d4c20d5692c02d952 = L.popup({"maxWidth": 300});
 
         
             
-                var html_df91d6031dcf5bd58b3afaf880a64834 = $(`<div id="html_df91d6031dcf5bd58b3afaf880a64834" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '7.0, 125.0878821', 7.0, 125.0878821, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_82c3d6c632c1b65f987197a92a675e71.setContent(html_df91d6031dcf5bd58b3afaf880a64834);
+                var html_c5339d4dd3864771b5f04fc66f643b5c = $(`<div id="html_c5339d4dd3864771b5f04fc66f643b5c" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '7.0, 125.0878821', 7.0, 125.0878821, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_c13e361691388f5d4c20d5692c02d952.setContent(html_c5339d4dd3864771b5f04fc66f643b5c);
             
         
 
-        circle_marker_68adc02a9557b7c737c5749c9ad32ca2.bindPopup(popup_82c3d6c632c1b65f987197a92a675e71)
+        circle_marker_01ba8d42c4770b9a86578d34f3cf02ce.bindPopup(popup_c13e361691388f5d4c20d5692c02d952)
         ;
 
         
     
     
-            var circle_marker_d54699659db6f1dbdf48109b43a2f44c = L.circleMarker(
+            var circle_marker_356fd1db129125132f8760bd2a597daa = L.circleMarker(
                 [16.4061, 120.5753],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_15882e3caaa348202d5030740bbf0976 = L.popup({"maxWidth": 300});
+        var popup_397bff4dc2759b3b373c81756815743a = L.popup({"maxWidth": 300});
 
         
             
-                var html_f043a9bce355075bea777659dbe18d17 = $(`<div id="html_f043a9bce355075bea777659dbe18d17" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '16.4061, 120.5753', 16.4061, 120.5753, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_15882e3caaa348202d5030740bbf0976.setContent(html_f043a9bce355075bea777659dbe18d17);
+                var html_8fa500aec151ad08addaf707ed832d67 = $(`<div id="html_8fa500aec151ad08addaf707ed832d67" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '16.4061, 120.5753', 16.4061, 120.5753, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_397bff4dc2759b3b373c81756815743a.setContent(html_8fa500aec151ad08addaf707ed832d67);
             
         
 
-        circle_marker_d54699659db6f1dbdf48109b43a2f44c.bindPopup(popup_15882e3caaa348202d5030740bbf0976)
+        circle_marker_356fd1db129125132f8760bd2a597daa.bindPopup(popup_397bff4dc2759b3b373c81756815743a)
         ;
 
         
     
     
-            var circle_marker_40956a9db0084abfff8771c3ff915d67 = L.circleMarker(
+            var circle_marker_368b581e99b0ca25d7ea1fc3e8b3f2df = L.circleMarker(
                 [14.0852, 121.3402],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_d29056a38bb62c0ca7e56d975a6e6a65 = L.popup({"maxWidth": 300});
+        var popup_8737c9fddf82d7e0ca6b01a626d84b1e = L.popup({"maxWidth": 300});
 
         
             
-                var html_bc83887e5edbb6ea9f5c38c1e7cbcad2 = $(`<div id="html_bc83887e5edbb6ea9f5c38c1e7cbcad2" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '14.0852, 121.3402', 14.0852, 121.3402, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_d29056a38bb62c0ca7e56d975a6e6a65.setContent(html_bc83887e5edbb6ea9f5c38c1e7cbcad2);
+                var html_99c60062c23a3b8fadfdc0c8d67043f4 = $(`<div id="html_99c60062c23a3b8fadfdc0c8d67043f4" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '14.0852, 121.3402', 14.0852, 121.3402, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_8737c9fddf82d7e0ca6b01a626d84b1e.setContent(html_99c60062c23a3b8fadfdc0c8d67043f4);
             
         
 
-        circle_marker_40956a9db0084abfff8771c3ff915d67.bindPopup(popup_d29056a38bb62c0ca7e56d975a6e6a65)
+        circle_marker_368b581e99b0ca25d7ea1fc3e8b3f2df.bindPopup(popup_8737c9fddf82d7e0ca6b01a626d84b1e)
         ;
 
         
     
     
-            var circle_marker_c8547458bca8206355809720b9225944 = L.circleMarker(
+            var circle_marker_14364b318beb3e04dbba3ce52b220fd3 = L.circleMarker(
                 [14.6456, 121.0689],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_744aa5440b855c25b63749ff69d42fd9 = L.popup({"maxWidth": 300});
+        var popup_647e8a60de68abceb5130e1484640c1c = L.popup({"maxWidth": 300});
 
         
             
-                var html_4fdfb084b1fb1be331c26b8a8a16656d = $(`<div id="html_4fdfb084b1fb1be331c26b8a8a16656d" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '14.6456, 121.0689', 14.6456, 121.0689, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_744aa5440b855c25b63749ff69d42fd9.setContent(html_4fdfb084b1fb1be331c26b8a8a16656d);
+                var html_224daca39a25f05691cced64041003e7 = $(`<div id="html_224daca39a25f05691cced64041003e7" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '14.6456, 121.0689', 14.6456, 121.0689, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_647e8a60de68abceb5130e1484640c1c.setContent(html_224daca39a25f05691cced64041003e7);
             
         
 
-        circle_marker_c8547458bca8206355809720b9225944.bindPopup(popup_744aa5440b855c25b63749ff69d42fd9)
+        circle_marker_14364b318beb3e04dbba3ce52b220fd3.bindPopup(popup_647e8a60de68abceb5130e1484640c1c)
         ;
 
         
     
     
-            var circle_marker_0a3c1f95d5b976f42eff21b271c7fc82 = L.circleMarker(
+            var circle_marker_b0bdc8684debcd76893e4c0c50cf9f09 = L.circleMarker(
                 [14.4163, 120.8553],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_2701faf20eaa6ff898c189b2e64438ab = L.popup({"maxWidth": 300});
+        var popup_7f04d758aa43a2da7885933c6b0283da = L.popup({"maxWidth": 300});
 
         
             
-                var html_abcdb16c0f3551e00bf9a57cef080402 = $(`<div id="html_abcdb16c0f3551e00bf9a57cef080402" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 14.4163, 120.8553<br>             <b>Latitude:</b> 14.4163<br>             <b>Longitude:</b> 120.8553<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '14.4163, 120.8553', 14.4163, 120.8553, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_2701faf20eaa6ff898c189b2e64438ab.setContent(html_abcdb16c0f3551e00bf9a57cef080402);
+                var html_62bfb366000b960519954cf29d11bcae = $(`<div id="html_62bfb366000b960519954cf29d11bcae" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 14.4163, 120.8553<br>             <b>Latitude:</b> 14.4163<br>             <b>Longitude:</b> 120.8553<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '14.4163, 120.8553', 14.4163, 120.8553, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_7f04d758aa43a2da7885933c6b0283da.setContent(html_62bfb366000b960519954cf29d11bcae);
             
         
 
-        circle_marker_0a3c1f95d5b976f42eff21b271c7fc82.bindPopup(popup_2701faf20eaa6ff898c189b2e64438ab)
+        circle_marker_b0bdc8684debcd76893e4c0c50cf9f09.bindPopup(popup_7f04d758aa43a2da7885933c6b0283da)
         ;
 
         
     
     
-            var circle_marker_3b8962d1180078655b26f84de8ae4b54 = L.circleMarker(
+            var circle_marker_85c784f039e7e994c985e933110caf8f = L.circleMarker(
                 [6.828828829, 124.8687246],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_b06ac8b44ca463ec3b02d83b14275b98 = L.popup({"maxWidth": 300});
+        var popup_d4414a2fee09e164648b008a55711da6 = L.popup({"maxWidth": 300});
 
         
             
-                var html_b5e240e1af4b5baf1ea789dc930c822c = $(`<div id="html_b5e240e1af4b5baf1ea789dc930c822c" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_b06ac8b44ca463ec3b02d83b14275b98.setContent(html_b5e240e1af4b5baf1ea789dc930c822c);
+                var html_dbcd8521d0299afce5e6c4e0e104d632 = $(`<div id="html_dbcd8521d0299afce5e6c4e0e104d632" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_d4414a2fee09e164648b008a55711da6.setContent(html_dbcd8521d0299afce5e6c4e0e104d632);
             
         
 
-        circle_marker_3b8962d1180078655b26f84de8ae4b54.bindPopup(popup_b06ac8b44ca463ec3b02d83b14275b98)
+        circle_marker_85c784f039e7e994c985e933110caf8f.bindPopup(popup_d4414a2fee09e164648b008a55711da6)
         ;
 
         
     
     
-            var circle_marker_f4f1c6f7eeb014f6cab9fbb8c4e2ce76 = L.circleMarker(
+            var circle_marker_093664c149e1e0f66f135d3a0d4b17e4 = L.circleMarker(
                 [8.5454, 125.9427],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_a43965f37546ea95b31f685ce890c8ed = L.popup({"maxWidth": 300});
+        var popup_a521a18107ba747ae64a53dbb392a760 = L.popup({"maxWidth": 300});
 
         
             
-                var html_7de7874f6bc3b951b76648da953efd11 = $(`<div id="html_7de7874f6bc3b951b76648da953efd11" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 8.5454, 125.9427<br>             <b>Latitude:</b> 8.5454<br>             <b>Longitude:</b> 125.9427<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '8.5454, 125.9427', 8.5454, 125.9427, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_a43965f37546ea95b31f685ce890c8ed.setContent(html_7de7874f6bc3b951b76648da953efd11);
+                var html_22edb4c1b51f0f1a157b7760a1b5d75d = $(`<div id="html_22edb4c1b51f0f1a157b7760a1b5d75d" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.7<br>             <b>Location:</b> 8.5454, 125.9427<br>             <b>Latitude:</b> 8.5454<br>             <b>Longitude:</b> 125.9427<br>             <b>Date and Time:</b> 3/23/2022 9:41<br>             <b>Intensity:</b> III<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.7', '8.5454, 125.9427', 8.5454, 125.9427, '3/23/2022 9:41', 'III', 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_a521a18107ba747ae64a53dbb392a760.setContent(html_22edb4c1b51f0f1a157b7760a1b5d75d);
             
         
 
-        circle_marker_f4f1c6f7eeb014f6cab9fbb8c4e2ce76.bindPopup(popup_a43965f37546ea95b31f685ce890c8ed)
+        circle_marker_093664c149e1e0f66f135d3a0d4b17e4.bindPopup(popup_a521a18107ba747ae64a53dbb392a760)
         ;
 
         
     
     
-            var circle_marker_5f3eb248c636cba96e2e3f3ddb5b009e = L.circleMarker(
+            var circle_marker_274147295ea7f65644cfc1cfdf7a9e2d = L.circleMarker(
                 [7.0, 125.0878821],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_6a98c72de37899bfde1e3138cae20a10 = L.popup({"maxWidth": 300});
+        var popup_01fd689afd9ee828214f62993e2f8b7f = L.popup({"maxWidth": 300});
 
         
             
-                var html_5cb5369935b1aa960678f1772ffad7c7 = $(`<div id="html_5cb5369935b1aa960678f1772ffad7c7" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '7.0, 125.0878821', 7.0, 125.0878821, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_6a98c72de37899bfde1e3138cae20a10.setContent(html_5cb5369935b1aa960678f1772ffad7c7);
+                var html_ff4534f76e1eed1b84dceacdb7efca85 = $(`<div id="html_ff4534f76e1eed1b84dceacdb7efca85" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '7.0, 125.0878821', 7.0, 125.0878821, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_01fd689afd9ee828214f62993e2f8b7f.setContent(html_ff4534f76e1eed1b84dceacdb7efca85);
             
         
 
-        circle_marker_5f3eb248c636cba96e2e3f3ddb5b009e.bindPopup(popup_6a98c72de37899bfde1e3138cae20a10)
+        circle_marker_274147295ea7f65644cfc1cfdf7a9e2d.bindPopup(popup_01fd689afd9ee828214f62993e2f8b7f)
         ;
 
         
     
     
-            var circle_marker_54eb65a0a7e24e04e182c41471810c5e = L.circleMarker(
+            var circle_marker_4245def81889c7dd27c9850b42a515bd = L.circleMarker(
                 [16.4061, 120.5753],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_f4941a104761a6e76161a39a9ddb17c5 = L.popup({"maxWidth": 300});
+        var popup_78c7d5ea8c19b7eea122e154ef73209d = L.popup({"maxWidth": 300});
 
         
             
-                var html_6360a7cb3a616fc1e614ca45b44a0037 = $(`<div id="html_6360a7cb3a616fc1e614ca45b44a0037" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '16.4061, 120.5753', 16.4061, 120.5753, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_f4941a104761a6e76161a39a9ddb17c5.setContent(html_6360a7cb3a616fc1e614ca45b44a0037);
+                var html_5bd55ae45e17e264e5059de129d6ed33 = $(`<div id="html_5bd55ae45e17e264e5059de129d6ed33" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '16.4061, 120.5753', 16.4061, 120.5753, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_78c7d5ea8c19b7eea122e154ef73209d.setContent(html_5bd55ae45e17e264e5059de129d6ed33);
             
         
 
-        circle_marker_54eb65a0a7e24e04e182c41471810c5e.bindPopup(popup_f4941a104761a6e76161a39a9ddb17c5)
+        circle_marker_4245def81889c7dd27c9850b42a515bd.bindPopup(popup_78c7d5ea8c19b7eea122e154ef73209d)
         ;
 
         
     
     
-            var circle_marker_7bb58c9ff71b184b6c9bf4ffe7ec9311 = L.circleMarker(
+            var circle_marker_8eb727607ca0ec4b5475f74f8844deee = L.circleMarker(
                 [14.0852, 121.3402],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_97d3315db5666e21255e11fe8e821898 = L.popup({"maxWidth": 300});
+        var popup_421cbbe776229bb04ae005361aea466f = L.popup({"maxWidth": 300});
 
         
             
-                var html_22106a14ca96b7ffa5f7bffaa3f41718 = $(`<div id="html_22106a14ca96b7ffa5f7bffaa3f41718" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.0852, 121.3402', 14.0852, 121.3402, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_97d3315db5666e21255e11fe8e821898.setContent(html_22106a14ca96b7ffa5f7bffaa3f41718);
+                var html_a7951322a9f4192147620427bb2e7dbe = $(`<div id="html_a7951322a9f4192147620427bb2e7dbe" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.0852, 121.3402', 14.0852, 121.3402, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_421cbbe776229bb04ae005361aea466f.setContent(html_a7951322a9f4192147620427bb2e7dbe);
             
         
 
-        circle_marker_7bb58c9ff71b184b6c9bf4ffe7ec9311.bindPopup(popup_97d3315db5666e21255e11fe8e821898)
+        circle_marker_8eb727607ca0ec4b5475f74f8844deee.bindPopup(popup_421cbbe776229bb04ae005361aea466f)
         ;
 
         
     
     
-            var circle_marker_11486f945d5bbc9f6f3a077e91c8e78e = L.circleMarker(
+            var circle_marker_c94eaa19073d9835588e2df7227f9ab1 = L.circleMarker(
                 [14.6456, 121.0689],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_e9dee4805de31bcf0be52d2553bf2e3b = L.popup({"maxWidth": 300});
+        var popup_a4ee70ad7fdcbddcfa74fcb155536b95 = L.popup({"maxWidth": 300});
 
         
             
-                var html_4a20e71bca6573fff534ff0f72182b8b = $(`<div id="html_4a20e71bca6573fff534ff0f72182b8b" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.6456, 121.0689', 14.6456, 121.0689, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_e9dee4805de31bcf0be52d2553bf2e3b.setContent(html_4a20e71bca6573fff534ff0f72182b8b);
+                var html_464be333fe1b7522c051361b65c26b71 = $(`<div id="html_464be333fe1b7522c051361b65c26b71" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.6456, 121.0689', 14.6456, 121.0689, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_a4ee70ad7fdcbddcfa74fcb155536b95.setContent(html_464be333fe1b7522c051361b65c26b71);
             
         
 
-        circle_marker_11486f945d5bbc9f6f3a077e91c8e78e.bindPopup(popup_e9dee4805de31bcf0be52d2553bf2e3b)
+        circle_marker_c94eaa19073d9835588e2df7227f9ab1.bindPopup(popup_a4ee70ad7fdcbddcfa74fcb155536b95)
         ;
 
         
     
     
-            var circle_marker_6a533a73639576a84d2ec0b8214a7e08 = L.circleMarker(
+            var circle_marker_eb5cdc0c4225d275bacf7e777ee76950 = L.circleMarker(
                 [7.0908, 125.5733],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_ee3feb8d69014ae42bfa9f713e4f4a28 = L.popup({"maxWidth": 300});
+        var popup_52058cef0226c6bfc103ff6c773238d7 = L.popup({"maxWidth": 300});
 
         
             
-                var html_4a4a3fc358d2b7e5618f273cb641a86f = $(`<div id="html_4a4a3fc358d2b7e5618f273cb641a86f" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '7.0908, 125.5733', 7.0908, 125.5733, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_ee3feb8d69014ae42bfa9f713e4f4a28.setContent(html_4a4a3fc358d2b7e5618f273cb641a86f);
+                var html_51335bd2f6fc485a61441ae67c76f73a = $(`<div id="html_51335bd2f6fc485a61441ae67c76f73a" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 10/26/2022 6:59<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '7.0908, 125.5733', 7.0908, 125.5733, '10/26/2022 6:59', 'I-VII', 'https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092_1280.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_52058cef0226c6bfc103ff6c773238d7.setContent(html_51335bd2f6fc485a61441ae67c76f73a);
             
         
 
-        circle_marker_6a533a73639576a84d2ec0b8214a7e08.bindPopup(popup_ee3feb8d69014ae42bfa9f713e4f4a28)
+        circle_marker_eb5cdc0c4225d275bacf7e777ee76950.bindPopup(popup_52058cef0226c6bfc103ff6c773238d7)
         ;
 
         
     
     
-            var circle_marker_63ac18825c98fdad122eaff414551fff = L.circleMarker(
+            var circle_marker_4cfded625626c1d6b57c0633892854ec = L.circleMarker(
                 [14.4788, 120.8989],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_0b615c1cbbc837b129ccf1c1749a4e11 = L.popup({"maxWidth": 300});
+        var popup_d7b5ce5227dcb09417868928cb873c82 = L.popup({"maxWidth": 300});
 
         
             
-                var html_3f6fb53ad51124eafb7b3bebb48907b1 = $(`<div id="html_3f6fb53ad51124eafb7b3bebb48907b1" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.4788, 120.8989<br>             <b>Latitude:</b> 14.4788<br>             <b>Longitude:</b> 120.8989<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.4788, 120.8989', 14.4788, 120.8989, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_0b615c1cbbc837b129ccf1c1749a4e11.setContent(html_3f6fb53ad51124eafb7b3bebb48907b1);
+                var html_8c717e3f710a496458d6e3a48b3244ba = $(`<div id="html_8c717e3f710a496458d6e3a48b3244ba" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.4788, 120.8989<br>             <b>Latitude:</b> 14.4788<br>             <b>Longitude:</b> 120.8989<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.4788, 120.8989', 14.4788, 120.8989, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_d7b5ce5227dcb09417868928cb873c82.setContent(html_8c717e3f710a496458d6e3a48b3244ba);
             
         
 
-        circle_marker_63ac18825c98fdad122eaff414551fff.bindPopup(popup_0b615c1cbbc837b129ccf1c1749a4e11)
+        circle_marker_4cfded625626c1d6b57c0633892854ec.bindPopup(popup_d7b5ce5227dcb09417868928cb873c82)
         ;
 
         
     
     
-            var circle_marker_09ddb928d142cf22f23bfd83a268aac2 = L.circleMarker(
+            var circle_marker_d7da09ec6ae47dc406d9cac39f6f281b = L.circleMarker(
                 [7.0, 125.0878821],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_1df585c2551b717d47e4a3882535345e = L.popup({"maxWidth": 300});
+        var popup_3873f2e926e41f66873c0fd13962a490 = L.popup({"maxWidth": 300});
 
         
             
-                var html_0cf566ea777b363a944d22312346f870 = $(`<div id="html_0cf566ea777b363a944d22312346f870" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '7.0, 125.0878821', 7.0, 125.0878821, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_1df585c2551b717d47e4a3882535345e.setContent(html_0cf566ea777b363a944d22312346f870);
+                var html_7c3f91a4f257c36e617ef8e1552f0079 = $(`<div id="html_7c3f91a4f257c36e617ef8e1552f0079" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '7.0, 125.0878821', 7.0, 125.0878821, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_3873f2e926e41f66873c0fd13962a490.setContent(html_7c3f91a4f257c36e617ef8e1552f0079);
             
         
 
-        circle_marker_09ddb928d142cf22f23bfd83a268aac2.bindPopup(popup_1df585c2551b717d47e4a3882535345e)
+        circle_marker_d7da09ec6ae47dc406d9cac39f6f281b.bindPopup(popup_3873f2e926e41f66873c0fd13962a490)
         ;
 
         
     
     
-            var circle_marker_39235f1545ddbb2874d000d69131059c = L.circleMarker(
+            var circle_marker_75f643c380210d18feaabb9431037cc8 = L.circleMarker(
                 [16.4061, 120.5753],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_9411fe759590de5137d9afc4534666df = L.popup({"maxWidth": 300});
+        var popup_799c302d9736c3844084fcf3188cc733 = L.popup({"maxWidth": 300});
 
         
             
-                var html_41a6c2d5c56d320ea22b98a188c998c7 = $(`<div id="html_41a6c2d5c56d320ea22b98a188c998c7" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '16.4061, 120.5753', 16.4061, 120.5753, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_9411fe759590de5137d9afc4534666df.setContent(html_41a6c2d5c56d320ea22b98a188c998c7);
+                var html_04394f6edb159d55e643c7b138bcf5d6 = $(`<div id="html_04394f6edb159d55e643c7b138bcf5d6" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '16.4061, 120.5753', 16.4061, 120.5753, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_799c302d9736c3844084fcf3188cc733.setContent(html_04394f6edb159d55e643c7b138bcf5d6);
             
         
 
-        circle_marker_39235f1545ddbb2874d000d69131059c.bindPopup(popup_9411fe759590de5137d9afc4534666df)
+        circle_marker_75f643c380210d18feaabb9431037cc8.bindPopup(popup_799c302d9736c3844084fcf3188cc733)
         ;
 
         
     
     
-            var circle_marker_150f90b38ff39a62320681f53c5b4104 = L.circleMarker(
+            var circle_marker_2ddfc5aff7287e2476dd57cca6649788 = L.circleMarker(
                 [14.0852, 121.3402],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_817f032ba20b9b4f668475fdf4bab3b3 = L.popup({"maxWidth": 300});
+        var popup_5dd6fbc88fc12d724515738c5a4c040f = L.popup({"maxWidth": 300});
 
         
             
-                var html_e9bcba4e1437010f3cc601258d8fd499 = $(`<div id="html_e9bcba4e1437010f3cc601258d8fd499" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.0852, 121.3402', 14.0852, 121.3402, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_817f032ba20b9b4f668475fdf4bab3b3.setContent(html_e9bcba4e1437010f3cc601258d8fd499);
+                var html_64952342dbcc9eee8fbc02cd6229e7cb = $(`<div id="html_64952342dbcc9eee8fbc02cd6229e7cb" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.0852, 121.3402', 14.0852, 121.3402, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_5dd6fbc88fc12d724515738c5a4c040f.setContent(html_64952342dbcc9eee8fbc02cd6229e7cb);
             
         
 
-        circle_marker_150f90b38ff39a62320681f53c5b4104.bindPopup(popup_817f032ba20b9b4f668475fdf4bab3b3)
+        circle_marker_2ddfc5aff7287e2476dd57cca6649788.bindPopup(popup_5dd6fbc88fc12d724515738c5a4c040f)
         ;
 
         
     
     
-            var circle_marker_c654ef540b53fa7ef6197350a0d87809 = L.circleMarker(
+            var circle_marker_6c903a970cf128908744febe362e20da = L.circleMarker(
                 [14.6456, 121.0689],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_e3538ca44f8502b5b20d164fe4949f1d = L.popup({"maxWidth": 300});
+        var popup_8a2dc5d8c4046a96f50867e922f37cfe = L.popup({"maxWidth": 300});
 
         
             
-                var html_c9307fb6721399f94d8859be9b0b3265 = $(`<div id="html_c9307fb6721399f94d8859be9b0b3265" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.6456, 121.0689', 14.6456, 121.0689, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_e3538ca44f8502b5b20d164fe4949f1d.setContent(html_c9307fb6721399f94d8859be9b0b3265);
+                var html_6d22082bf373a20dab82237349a402fa = $(`<div id="html_6d22082bf373a20dab82237349a402fa" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '14.6456, 121.0689', 14.6456, 121.0689, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_8a2dc5d8c4046a96f50867e922f37cfe.setContent(html_6d22082bf373a20dab82237349a402fa);
             
         
 
-        circle_marker_c654ef540b53fa7ef6197350a0d87809.bindPopup(popup_e3538ca44f8502b5b20d164fe4949f1d)
+        circle_marker_6c903a970cf128908744febe362e20da.bindPopup(popup_8a2dc5d8c4046a96f50867e922f37cfe)
         ;
 
         
     
     
-            var circle_marker_6b62d9e40e986b841c8de62316623cd4 = L.circleMarker(
+            var circle_marker_32654e751ed12e748f3a1040bf22552c = L.circleMarker(
                 [13.57657658, 123.2585666],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_64be3acb722d7091db72134e38e9f298 = L.popup({"maxWidth": 300});
+        var popup_1e57305048906d8a1b53ff52c915ac01 = L.popup({"maxWidth": 300});
 
         
             
-                var html_7f2055e41c285e36274aca1851b5d303 = $(`<div id="html_7f2055e41c285e36274aca1851b5d303" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_64be3acb722d7091db72134e38e9f298.setContent(html_7f2055e41c285e36274aca1851b5d303);
+                var html_9e2edd383dc2575c2b0fc2da09517ae7 = $(`<div id="html_9e2edd383dc2575c2b0fc2da09517ae7" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_1e57305048906d8a1b53ff52c915ac01.setContent(html_9e2edd383dc2575c2b0fc2da09517ae7);
             
         
 
-        circle_marker_6b62d9e40e986b841c8de62316623cd4.bindPopup(popup_64be3acb722d7091db72134e38e9f298)
+        circle_marker_32654e751ed12e748f3a1040bf22552c.bindPopup(popup_1e57305048906d8a1b53ff52c915ac01)
         ;
 
         
     
     
-            var circle_marker_ce19ff3a0b0a4e2cd3ecc9cb84bfc8a1 = L.circleMarker(
+            var circle_marker_9780cb9bf168d7d96a50e6ee76452477 = L.circleMarker(
                 [7.0908, 125.5733],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_8ed1be18108a823b7954500d23ee2848 = L.popup({"maxWidth": 300});
+        var popup_3dd73c46e360f591d483e9509a10b186 = L.popup({"maxWidth": 300});
 
         
             
-                var html_9db98082c7509de12cea4f911601958f = $(`<div id="html_9db98082c7509de12cea4f911601958f" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '7.0908, 125.5733', 7.0908, 125.5733, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_8ed1be18108a823b7954500d23ee2848.setContent(html_9db98082c7509de12cea4f911601958f);
+                var html_e63d8064d8fee9e9cb16a0d5a6271b59 = $(`<div id="html_e63d8064d8fee9e9cb16a0d5a6271b59" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 7.0<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 7/27/2022 16:43<br>             <b>Intensity:</b> I-VII<br>             <a href="javascript:void(0);" onclick="openSidePanel('7.0', '7.0908, 125.5733', 7.0908, 125.5733, '7/27/2022 16:43', 'I-VII', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_3dd73c46e360f591d483e9509a10b186.setContent(html_e63d8064d8fee9e9cb16a0d5a6271b59);
             
         
 
-        circle_marker_ce19ff3a0b0a4e2cd3ecc9cb84bfc8a1.bindPopup(popup_8ed1be18108a823b7954500d23ee2848)
+        circle_marker_9780cb9bf168d7d96a50e6ee76452477.bindPopup(popup_3dd73c46e360f591d483e9509a10b186)
         ;
 
         
     
     
-            var circle_marker_a4952cf49d44b74da9ea5107d978869b = L.circleMarker(
+            var circle_marker_f2948376625ce9ae6ae1fc22cee9a3bd = L.circleMarker(
                 [7.0, 125.0878821],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_8f78ddb2c3c8db034b669abdb5e79a21 = L.popup({"maxWidth": 300});
+        var popup_374a1969b674f64b8526ecf2af6a34d1 = L.popup({"maxWidth": 300});
 
         
             
-                var html_df77b82c4dfb5f0c7a67f17f3add7ce4 = $(`<div id="html_df77b82c4dfb5f0c7a67f17f3add7ce4" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 12/4/2023 11:49<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '7.0, 125.0878821', 7.0, 125.0878821, '12/4/2023 11:49', 'I-V', 'https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/09943d85-b8c7-4d64-af31-1a27d1b76698/arrow.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_8f78ddb2c3c8db034b669abdb5e79a21.setContent(html_df77b82c4dfb5f0c7a67f17f3add7ce4);
+                var html_a40b2bdf7c254096e50da317d9d618a8 = $(`<div id="html_a40b2bdf7c254096e50da317d9d618a8" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 7.0, 125.0878821<br>             <b>Latitude:</b> 7.0<br>             <b>Longitude:</b> 125.0878821<br>             <b>Date and Time:</b> 12/4/2023 11:49<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '7.0, 125.0878821', 7.0, 125.0878821, '12/4/2023 11:49', 'I-V', 'https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/09943d85-b8c7-4d64-af31-1a27d1b76698/arrow.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_374a1969b674f64b8526ecf2af6a34d1.setContent(html_a40b2bdf7c254096e50da317d9d618a8);
             
         
 
-        circle_marker_a4952cf49d44b74da9ea5107d978869b.bindPopup(popup_8f78ddb2c3c8db034b669abdb5e79a21)
+        circle_marker_f2948376625ce9ae6ae1fc22cee9a3bd.bindPopup(popup_374a1969b674f64b8526ecf2af6a34d1)
         ;
 
         
     
     
-            var circle_marker_b789efb362ac2212068f3e1ad1bb85cd = L.circleMarker(
+            var circle_marker_e32a70e6c99846de93a5d7bc7f3bdbd0 = L.circleMarker(
                 [16.4061, 120.5753],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_509c838fabe2e5275a46bdc65a29b0ea = L.popup({"maxWidth": 300});
+        var popup_246a391766e190b7c023543f2ee01c23 = L.popup({"maxWidth": 300});
 
         
             
-                var html_8b70867bc60092ca1f1d99abfbf43dec = $(`<div id="html_8b70867bc60092ca1f1d99abfbf43dec" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 12/4/2023 11:49<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '16.4061, 120.5753', 16.4061, 120.5753, '12/4/2023 11:49', 'I-V', 'https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/09943d85-b8c7-4d64-af31-1a27d1b76698/arrow.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_509c838fabe2e5275a46bdc65a29b0ea.setContent(html_8b70867bc60092ca1f1d99abfbf43dec);
+                var html_ebf50835a18c20285b1c56f8047082a5 = $(`<div id="html_ebf50835a18c20285b1c56f8047082a5" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 12/4/2023 11:49<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '16.4061, 120.5753', 16.4061, 120.5753, '12/4/2023 11:49', 'I-V', 'https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/09943d85-b8c7-4d64-af31-1a27d1b76698/arrow.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_246a391766e190b7c023543f2ee01c23.setContent(html_ebf50835a18c20285b1c56f8047082a5);
             
         
 
-        circle_marker_b789efb362ac2212068f3e1ad1bb85cd.bindPopup(popup_509c838fabe2e5275a46bdc65a29b0ea)
+        circle_marker_e32a70e6c99846de93a5d7bc7f3bdbd0.bindPopup(popup_246a391766e190b7c023543f2ee01c23)
         ;
 
         
     
     
-            var circle_marker_f861fda60731395c54e1b357b3b9ee43 = L.circleMarker(
+            var circle_marker_3df56ccd8abb580836d47ec07dcc2681 = L.circleMarker(
                 [13.57657658, 123.2585666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_68dcf1507b8c9e86f1f4aff9d10ed895 = L.popup({"maxWidth": 300});
+        var popup_bee19bc1027ca71c0ee494f9c59510ee = L.popup({"maxWidth": 300});
 
         
             
-                var html_f00b5a42774a7b1721834b4a1026ede0 = $(`<div id="html_f00b5a42774a7b1721834b4a1026ede0" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 12/4/2023 11:49<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '12/4/2023 11:49', 'I-V', 'https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/09943d85-b8c7-4d64-af31-1a27d1b76698/arrow.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_68dcf1507b8c9e86f1f4aff9d10ed895.setContent(html_f00b5a42774a7b1721834b4a1026ede0);
+                var html_50cec8bf02d76c79086ea3470c1df5e7 = $(`<div id="html_50cec8bf02d76c79086ea3470c1df5e7" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.8<br>             <b>Location:</b> 13.57657658, 123.2585666<br>             <b>Latitude:</b> 13.57657658<br>             <b>Longitude:</b> 123.2585666<br>             <b>Date and Time:</b> 12/4/2023 11:49<br>             <b>Intensity:</b> I-V<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.8', '13.57657658, 123.2585666', 13.57657658, 123.2585666, '12/4/2023 11:49', 'I-V', 'https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/09943d85-b8c7-4d64-af31-1a27d1b76698/arrow.png', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_bee19bc1027ca71c0ee494f9c59510ee.setContent(html_50cec8bf02d76c79086ea3470c1df5e7);
             
         
 
-        circle_marker_f861fda60731395c54e1b357b3b9ee43.bindPopup(popup_68dcf1507b8c9e86f1f4aff9d10ed895)
+        circle_marker_3df56ccd8abb580836d47ec07dcc2681.bindPopup(popup_bee19bc1027ca71c0ee494f9c59510ee)
         ;
 
         
     
     
-            var circle_marker_3e2c4054c2079e1f27cd393aeae2bf5a = L.circleMarker(
+            var circle_marker_335543297963d41184c9b68d3f1da35d = L.circleMarker(
                 [13.3594, 123.7307],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_3769ef287a915a31d57a6418610926c1 = L.popup({"maxWidth": 300});
+        var popup_080bc5eeaa4a926b6920f7f8cab95594 = L.popup({"maxWidth": 300});
 
         
             
-                var html_abd2c390313f0e528b6d6f852e816a44 = $(`<div id="html_abd2c390313f0e528b6d6f852e816a44" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 13.3594, 123.7307<br>             <b>Latitude:</b> 13.3594<br>             <b>Longitude:</b> 123.7307<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '13.3594, 123.7307', 13.3594, 123.7307, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_3769ef287a915a31d57a6418610926c1.setContent(html_abd2c390313f0e528b6d6f852e816a44);
+                var html_5b3f69f86559a804eb95e819f2e6a46f = $(`<div id="html_5b3f69f86559a804eb95e819f2e6a46f" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 13.3594, 123.7307<br>             <b>Latitude:</b> 13.3594<br>             <b>Longitude:</b> 123.7307<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '13.3594, 123.7307', 13.3594, 123.7307, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_080bc5eeaa4a926b6920f7f8cab95594.setContent(html_5b3f69f86559a804eb95e819f2e6a46f);
             
         
 
-        circle_marker_3e2c4054c2079e1f27cd393aeae2bf5a.bindPopup(popup_3769ef287a915a31d57a6418610926c1)
+        circle_marker_335543297963d41184c9b68d3f1da35d.bindPopup(popup_080bc5eeaa4a926b6920f7f8cab95594)
         ;
 
         
     
     
-            var circle_marker_02befe53cd549248907add1b48e58de6 = L.circleMarker(
+            var circle_marker_5c148032d1982a435d2ab7902cac1c91 = L.circleMarker(
                 [14.4788, 120.8989],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_4d5bd42d64ab5daf0e15c6d5ee44d3a5 = L.popup({"maxWidth": 300});
+        var popup_66d5dbbefb79f51a13e5cb4928563e4b = L.popup({"maxWidth": 300});
 
         
             
-                var html_7f6a1d2820c5475dcb5a4886084db582 = $(`<div id="html_7f6a1d2820c5475dcb5a4886084db582" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.4788, 120.8989<br>             <b>Latitude:</b> 14.4788<br>             <b>Longitude:</b> 120.8989<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.4788, 120.8989', 14.4788, 120.8989, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_4d5bd42d64ab5daf0e15c6d5ee44d3a5.setContent(html_7f6a1d2820c5475dcb5a4886084db582);
+                var html_ba060b94ec1ba26761c8b41310475427 = $(`<div id="html_ba060b94ec1ba26761c8b41310475427" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.4788, 120.8989<br>             <b>Latitude:</b> 14.4788<br>             <b>Longitude:</b> 120.8989<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.4788, 120.8989', 14.4788, 120.8989, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_66d5dbbefb79f51a13e5cb4928563e4b.setContent(html_ba060b94ec1ba26761c8b41310475427);
             
         
 
-        circle_marker_02befe53cd549248907add1b48e58de6.bindPopup(popup_4d5bd42d64ab5daf0e15c6d5ee44d3a5)
+        circle_marker_5c148032d1982a435d2ab7902cac1c91.bindPopup(popup_66d5dbbefb79f51a13e5cb4928563e4b)
         ;
 
         
     
     
-            var circle_marker_3b385ce6263cb58cccd6130ceae2b84c = L.circleMarker(
+            var circle_marker_b82079e73390af032fe4d8626e859ed0 = L.circleMarker(
                 [16.4061, 120.5753],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_ae237437a04cd32a5e139c3b9f8877e6 = L.popup({"maxWidth": 300});
+        var popup_d2cf8e96d0e18a2a3e6f3464dc244886 = L.popup({"maxWidth": 300});
 
         
             
-                var html_9e2c609f95819e9c11c7c7048dc5b62f = $(`<div id="html_9e2c609f95819e9c11c7c7048dc5b62f" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '16.4061, 120.5753', 16.4061, 120.5753, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_ae237437a04cd32a5e139c3b9f8877e6.setContent(html_9e2c609f95819e9c11c7c7048dc5b62f);
+                var html_d40ebb1ac1fecb62b3ab35eb5bd2ea95 = $(`<div id="html_d40ebb1ac1fecb62b3ab35eb5bd2ea95" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '16.4061, 120.5753', 16.4061, 120.5753, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_d2cf8e96d0e18a2a3e6f3464dc244886.setContent(html_d40ebb1ac1fecb62b3ab35eb5bd2ea95);
             
         
 
-        circle_marker_3b385ce6263cb58cccd6130ceae2b84c.bindPopup(popup_ae237437a04cd32a5e139c3b9f8877e6)
+        circle_marker_b82079e73390af032fe4d8626e859ed0.bindPopup(popup_d2cf8e96d0e18a2a3e6f3464dc244886)
         ;
 
         
     
     
-            var circle_marker_69208ff3780b3c50720f42225e14e512 = L.circleMarker(
+            var circle_marker_6dc499454aa92aa09bd4321a180bd5e8 = L.circleMarker(
                 [14.0852, 121.3402],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_8b007b4d7a158ab40dbb9128f0c9d767 = L.popup({"maxWidth": 300});
+        var popup_177b85719aff1856458ada6d493f6d9a = L.popup({"maxWidth": 300});
 
         
             
-                var html_d412e751a896f1bacbea22f0529ca80c = $(`<div id="html_d412e751a896f1bacbea22f0529ca80c" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.0852, 121.3402', 14.0852, 121.3402, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_8b007b4d7a158ab40dbb9128f0c9d767.setContent(html_d412e751a896f1bacbea22f0529ca80c);
+                var html_e7c9d40022775424f7ddafc7873de553 = $(`<div id="html_e7c9d40022775424f7ddafc7873de553" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.0852, 121.3402<br>             <b>Latitude:</b> 14.0852<br>             <b>Longitude:</b> 121.3402<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.0852, 121.3402', 14.0852, 121.3402, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_177b85719aff1856458ada6d493f6d9a.setContent(html_e7c9d40022775424f7ddafc7873de553);
             
         
 
-        circle_marker_69208ff3780b3c50720f42225e14e512.bindPopup(popup_8b007b4d7a158ab40dbb9128f0c9d767)
+        circle_marker_6dc499454aa92aa09bd4321a180bd5e8.bindPopup(popup_177b85719aff1856458ada6d493f6d9a)
         ;
 
         
     
     
-            var circle_marker_b84678168c9be03ddc259ea144857a6e = L.circleMarker(
+            var circle_marker_3080ba655c764b9916d4a23067076c4a = L.circleMarker(
                 [14.6456, 121.0689],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_994dd78b87771178341d9174b9d21e01 = L.popup({"maxWidth": 300});
+        var popup_d04e638e13272bc323430f9cdf577e22 = L.popup({"maxWidth": 300});
 
         
             
-                var html_6ef6c1092ee9e7cc3746526121483c13 = $(`<div id="html_6ef6c1092ee9e7cc3746526121483c13" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.6456, 121.0689', 14.6456, 121.0689, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_994dd78b87771178341d9174b9d21e01.setContent(html_6ef6c1092ee9e7cc3746526121483c13);
+                var html_ad01527e2add905a3930d29e0ca9fe5a = $(`<div id="html_ad01527e2add905a3930d29e0ca9fe5a" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.6456, 121.0689', 14.6456, 121.0689, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_d04e638e13272bc323430f9cdf577e22.setContent(html_ad01527e2add905a3930d29e0ca9fe5a);
             
         
 
-        circle_marker_b84678168c9be03ddc259ea144857a6e.bindPopup(popup_994dd78b87771178341d9174b9d21e01)
+        circle_marker_3080ba655c764b9916d4a23067076c4a.bindPopup(popup_d04e638e13272bc323430f9cdf577e22)
         ;
 
         
     
     
-            var circle_marker_3bde226301853dec8350e486dd56e20e = L.circleMarker(
+            var circle_marker_bac178bc05a74a582a9b4b65c650e979 = L.circleMarker(
                 [14.4163, 120.8553],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_1ea8ba3acbc6cddd4c549678db024394 = L.popup({"maxWidth": 300});
+        var popup_991bdfba94f89540db156b703b1a4a6d = L.popup({"maxWidth": 300});
 
         
             
-                var html_a5cd3f2a0516045a1d2172af3fd70f61 = $(`<div id="html_a5cd3f2a0516045a1d2172af3fd70f61" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.4163, 120.8553<br>             <b>Latitude:</b> 14.4163<br>             <b>Longitude:</b> 120.8553<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.4163, 120.8553', 14.4163, 120.8553, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_1ea8ba3acbc6cddd4c549678db024394.setContent(html_a5cd3f2a0516045a1d2172af3fd70f61);
+                var html_cfbdb704580b7aaf64a7ef9a38e99746 = $(`<div id="html_cfbdb704580b7aaf64a7ef9a38e99746" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.4163, 120.8553<br>             <b>Latitude:</b> 14.4163<br>             <b>Longitude:</b> 120.8553<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.4163, 120.8553', 14.4163, 120.8553, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_991bdfba94f89540db156b703b1a4a6d.setContent(html_cfbdb704580b7aaf64a7ef9a38e99746);
             
         
 
-        circle_marker_3bde226301853dec8350e486dd56e20e.bindPopup(popup_1ea8ba3acbc6cddd4c549678db024394)
+        circle_marker_bac178bc05a74a582a9b4b65c650e979.bindPopup(popup_991bdfba94f89540db156b703b1a4a6d)
         ;
 
         
     
     
-            var circle_marker_977e5c9b1ed30ca6e043d47327ea28fd = L.circleMarker(
+            var circle_marker_b6396f667e46192740012051846622ff = L.circleMarker(
                 [8.5454, 125.9427],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_c8447ec92b910a28670e501fd983cb2a = L.popup({"maxWidth": 300});
+        var popup_4b9e3ceeb793611eab75b2afc66e7e8a = L.popup({"maxWidth": 300});
 
         
             
-                var html_4d2270b7680873d0c96177eac732b03e = $(`<div id="html_4d2270b7680873d0c96177eac732b03e" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 8.5454, 125.9427<br>             <b>Latitude:</b> 8.5454<br>             <b>Longitude:</b> 125.9427<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '8.5454, 125.9427', 8.5454, 125.9427, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_c8447ec92b910a28670e501fd983cb2a.setContent(html_4d2270b7680873d0c96177eac732b03e);
+                var html_381846fedba6898509076d3da54af21e = $(`<div id="html_381846fedba6898509076d3da54af21e" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 8.5454, 125.9427<br>             <b>Latitude:</b> 8.5454<br>             <b>Longitude:</b> 125.9427<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '8.5454, 125.9427', 8.5454, 125.9427, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_4b9e3ceeb793611eab75b2afc66e7e8a.setContent(html_381846fedba6898509076d3da54af21e);
             
         
 
-        circle_marker_977e5c9b1ed30ca6e043d47327ea28fd.bindPopup(popup_c8447ec92b910a28670e501fd983cb2a)
+        circle_marker_b6396f667e46192740012051846622ff.bindPopup(popup_4b9e3ceeb793611eab75b2afc66e7e8a)
         ;
 
         
     
     
-            var circle_marker_978305cf7b204458878e8c25a2b5c4ef = L.circleMarker(
+            var circle_marker_014ce92e42d3804b910c9065468d6d4e = L.circleMarker(
                 [7.0908, 125.5733],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_9dd20289316875efe3e46f8476a4bfd6 = L.popup({"maxWidth": 300});
+        var popup_9c847398be8c22c3748358ca4b0b4dde = L.popup({"maxWidth": 300});
 
         
             
-                var html_77e2db52d970fdf66b7b9f990a58c79c = $(`<div id="html_77e2db52d970fdf66b7b9f990a58c79c" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '7.0908, 125.5733', 7.0908, 125.5733, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_9dd20289316875efe3e46f8476a4bfd6.setContent(html_77e2db52d970fdf66b7b9f990a58c79c);
+                var html_2266059aeb2c27477f5b4d5e3e6730a1 = $(`<div id="html_2266059aeb2c27477f5b4d5e3e6730a1" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 3/14/2022 13:05<br>             <b>Intensity:</b> I-IV<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '7.0908, 125.5733', 7.0908, 125.5733, '3/14/2022 13:05', 'I-IV', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_9c847398be8c22c3748358ca4b0b4dde.setContent(html_2266059aeb2c27477f5b4d5e3e6730a1);
             
         
 
-        circle_marker_978305cf7b204458878e8c25a2b5c4ef.bindPopup(popup_9dd20289316875efe3e46f8476a4bfd6)
+        circle_marker_014ce92e42d3804b910c9065468d6d4e.bindPopup(popup_9c847398be8c22c3748358ca4b0b4dde)
         ;
 
         
     
     
-            var circle_marker_382f933258a443a150cef4904d2da2e8 = L.circleMarker(
+            var circle_marker_8d6feef18f281e4c0a2cf16240d3986e = L.circleMarker(
                 [16.4061, 120.5753],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_c07185389035e3c31da46b2280f87d26 = L.popup({"maxWidth": 300});
+        var popup_fe4a3795b85e20ddf50e471787373a7f = L.popup({"maxWidth": 300});
 
         
             
-                var html_db351f5a6aff8f4047401aee1fdee66f = $(`<div id="html_db351f5a6aff8f4047401aee1fdee66f" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 2/24/2023 12:02<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '16.4061, 120.5753', 16.4061, 120.5753, '2/24/2023 12:02', 'I-II', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_c07185389035e3c31da46b2280f87d26.setContent(html_db351f5a6aff8f4047401aee1fdee66f);
+                var html_4f64f54e8324475061ac0246846094d6 = $(`<div id="html_4f64f54e8324475061ac0246846094d6" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 16.4061, 120.5753<br>             <b>Latitude:</b> 16.4061<br>             <b>Longitude:</b> 120.5753<br>             <b>Date and Time:</b> 2/24/2023 12:02<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '16.4061, 120.5753', 16.4061, 120.5753, '2/24/2023 12:02', 'I-II', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_fe4a3795b85e20ddf50e471787373a7f.setContent(html_4f64f54e8324475061ac0246846094d6);
             
         
 
-        circle_marker_382f933258a443a150cef4904d2da2e8.bindPopup(popup_c07185389035e3c31da46b2280f87d26)
+        circle_marker_8d6feef18f281e4c0a2cf16240d3986e.bindPopup(popup_fe4a3795b85e20ddf50e471787373a7f)
         ;
 
         
     
     
-            var circle_marker_4932e8ee0590462c73cb3fa6d46e6ece = L.circleMarker(
+            var circle_marker_fb54d34fc1c046d50f59c2075cd9d7bc = L.circleMarker(
                 [14.6456, 121.0689],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_820b0c9507a763e174c980d60697536c = L.popup({"maxWidth": 300});
+        var popup_8860d25862f6dafab79038c6b0672ad5 = L.popup({"maxWidth": 300});
 
         
             
-                var html_3aa03df5f98d0f26cac80d1ff546dce0 = $(`<div id="html_3aa03df5f98d0f26cac80d1ff546dce0" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 2/24/2023 12:02<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.6456, 121.0689', 14.6456, 121.0689, '2/24/2023 12:02', 'I-II', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_820b0c9507a763e174c980d60697536c.setContent(html_3aa03df5f98d0f26cac80d1ff546dce0);
+                var html_27c122f90abfbf96d5cdf942e92846b1 = $(`<div id="html_27c122f90abfbf96d5cdf942e92846b1" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 14.6456, 121.0689<br>             <b>Latitude:</b> 14.6456<br>             <b>Longitude:</b> 121.0689<br>             <b>Date and Time:</b> 2/24/2023 12:02<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '14.6456, 121.0689', 14.6456, 121.0689, '2/24/2023 12:02', 'I-II', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_8860d25862f6dafab79038c6b0672ad5.setContent(html_27c122f90abfbf96d5cdf942e92846b1);
             
         
 
-        circle_marker_4932e8ee0590462c73cb3fa6d46e6ece.bindPopup(popup_820b0c9507a763e174c980d60697536c)
+        circle_marker_fb54d34fc1c046d50f59c2075cd9d7bc.bindPopup(popup_8860d25862f6dafab79038c6b0672ad5)
         ;
 
         
     
     
-            var circle_marker_8e58faf521d28260958199f6564e7a32 = L.circleMarker(
+            var circle_marker_606497988997302df397d94e208b9518 = L.circleMarker(
                 [6.828828829, 124.8687246],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_fe88aec8ed4f7c0a2cced05847094893 = L.popup({"maxWidth": 300});
+        var popup_31a2cfc92613a3738a4fd27c44552eec = L.popup({"maxWidth": 300});
 
         
             
-                var html_3ec3c317479859112b344b137625a455 = $(`<div id="html_3ec3c317479859112b344b137625a455" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 2/24/2023 12:02<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '2/24/2023 12:02', 'I-II', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_fe88aec8ed4f7c0a2cced05847094893.setContent(html_3ec3c317479859112b344b137625a455);
+                var html_e9f10c1933160445fe186e5e5ffab2b2 = $(`<div id="html_e9f10c1933160445fe186e5e5ffab2b2" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 6.828828829, 124.8687246<br>             <b>Latitude:</b> 6.828828829<br>             <b>Longitude:</b> 124.8687246<br>             <b>Date and Time:</b> 2/24/2023 12:02<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '6.828828829, 124.8687246', 6.828828829, 124.8687246, '2/24/2023 12:02', 'I-II', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_31a2cfc92613a3738a4fd27c44552eec.setContent(html_e9f10c1933160445fe186e5e5ffab2b2);
             
         
 
-        circle_marker_8e58faf521d28260958199f6564e7a32.bindPopup(popup_fe88aec8ed4f7c0a2cced05847094893)
+        circle_marker_606497988997302df397d94e208b9518.bindPopup(popup_31a2cfc92613a3738a4fd27c44552eec)
         ;
 
         
     
     
-            var circle_marker_e5ea3f5f3aecb2099b3d3f849aef88fc = L.circleMarker(
+            var circle_marker_c4b8d5ef96d4061860b91820f7e4e94d = L.circleMarker(
                 [7.0908, 125.5733],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e);
+            ).addTo(marker_cluster_2fde6a38bf8bf00d3016a635981855c1);
         
     
-        var popup_c71b827e3f72201890d7d3848ee15fc6 = L.popup({"maxWidth": 300});
+        var popup_cfd042f89cd308d922098e2977c0ed9b = L.popup({"maxWidth": 300});
 
         
             
-                var html_d76eb5a57af3e1537e203d93311a58b2 = $(`<div id="html_d76eb5a57af3e1537e203d93311a58b2" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 2/24/2023 12:02<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '7.0908, 125.5733', 7.0908, 125.5733, '2/24/2023 12:02', 'I-II', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
-                popup_c71b827e3f72201890d7d3848ee15fc6.setContent(html_d76eb5a57af3e1537e203d93311a58b2);
+                var html_8130285ffcbe8a3450cfafe82ac66f0b = $(`<div id="html_8130285ffcbe8a3450cfafe82ac66f0b" style="width: 100.0%; height: 100.0%;">             <b>Earthquake Information</b><br>             <b>Magnitude:</b> 6.4<br>             <b>Location:</b> 7.0908, 125.5733<br>             <b>Latitude:</b> 7.0908<br>             <b>Longitude:</b> 125.5733<br>             <b>Date and Time:</b> 2/24/2023 12:02<br>             <b>Intensity:</b> I-II<br>             <a href="javascript:void(0);" onclick="openSidePanel('6.4', '7.0908, 125.5733', 7.0908, 125.5733, '2/24/2023 12:02', 'I-II', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBvBJSqVb9RV-e35XCO5Amw3YTpFAjd1qUNkLFGYE4MrHH4ikuMUOIzuFTQY2jABA7HE&usqp=CAU', 'https://static.vecteezy.com/system/resources/previews/017/300/766/non_2x/learning-english-doodle-set-language-school-in-sketch-style-online-language-education-course-hand-drawn-illustration-isolated-on-white-background-vector.jpg')">Click to see more details</a>         </div>`)[0];
+                popup_cfd042f89cd308d922098e2977c0ed9b.setContent(html_8130285ffcbe8a3450cfafe82ac66f0b);
             
         
 
-        circle_marker_e5ea3f5f3aecb2099b3d3f849aef88fc.bindPopup(popup_c71b827e3f72201890d7d3848ee15fc6)
+        circle_marker_c4b8d5ef96d4061860b91820f7e4e94d.bindPopup(popup_cfd042f89cd308d922098e2977c0ed9b)
         ;
 
         
     
     
-            marker_cluster_197bf20b1cf7a2d61bcca8b38370db4e.addTo(map_16ebf2c9fccb453b28f5bbd92fbc097e);
+            marker_cluster_2fde6a38bf8bf00d3016a635981855c1.addTo(map_9cc28d0af29cae8652ab4bc8f6c3b152);
         
 </script>
 </html>
