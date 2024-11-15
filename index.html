@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a357892d771943686db6d5eabd3924ab {
+                #map_7364c3900fdda12f31b1d46e887ef0c2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -670,14 +670,14 @@
         </script>
     
     
-            <div class="folium-map" id="map_a357892d771943686db6d5eabd3924ab" ></div>
+            <div class="folium-map" id="map_7364c3900fdda12f31b1d46e887ef0c2" ></div>
         
 </body>
 <script>
     
     
-            var map_a357892d771943686db6d5eabd3924ab = L.map(
-                "map_a357892d771943686db6d5eabd3924ab",
+            var map_7364c3900fdda12f31b1d46e887ef0c2 = L.map(
+                "map_7364c3900fdda12f31b1d46e887ef0c2",
                 {
                     center: [10.997000000000002, 124.27999999999997],
                     crs: L.CRS.EPSG3857,
@@ -691,280 +691,260 @@
 
         
     
-            var tile_layer_b9d63a42cb2b0fe657d75d3456411292 = L.tileLayer(
+            var tile_layer_1c396ea9f514370efd68b1545617be39 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_b9d63a42cb2b0fe657d75d3456411292.addTo(map_a357892d771943686db6d5eabd3924ab);
+            tile_layer_1c396ea9f514370efd68b1545617be39.addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var marker_36542bba180f6e665b21b95d98a42eed = L.marker(
+            var marker_e8f8df46ad875d74f839890c5ad7d467 = L.marker(
                 [8.44, 126.59],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_adf508d14cd374535dfe1c01badcb44d = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_36542bba180f6e665b21b95d98a42eed.setIcon(icon_adf508d14cd374535dfe1c01badcb44d);
+        var custom_icon_c26471c66f5bd8912d49190d91d4d1ca = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_e8f8df46ad875d74f839890c5ad7d467.setIcon(custom_icon_c26471c66f5bd8912d49190d91d4d1ca);
         
     
-        var popup_5e2347ab0d5a7c7d377dba54c35feaea = L.popup({"maxWidth": 300});
+        var popup_25bbf1b878eff605e1895f70437decf0 = L.popup({"maxWidth": 300});
 
         
             
-                var html_34ab6c4f8d7e1470171e5b15d72317f1 = $(`<div id="html_34ab6c4f8d7e1470171e5b15d72317f1" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 7.4<br>                 <b>Location:</b> 8.44, 126.59<br>                 <b>Latitude:</b> 8.44<br>                 <b>Longitude:</b> 126.59<br>                 <b>Date and Time:</b> 12/3/2023 6:37<br>                 <b>Intensity:</b> I-VII <br>                                  <button onclick="openSidePanel('7.4', '8.44, 126.59', 8.44, 126.59, '12/3/2023 6:37', 'I-VII ', 'https://i.imgur.com/KvHUjnB.png', 'https://i.imgur.com/8Yuwrxq.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_5e2347ab0d5a7c7d377dba54c35feaea.setContent(html_34ab6c4f8d7e1470171e5b15d72317f1);
+                var html_bdf9d20ab500b24d534fb63e014d7afe = $(`<div id="html_bdf9d20ab500b24d534fb63e014d7afe" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 7.4<br>                 <b>Location:</b> 8.44, 126.59<br>                 <b>Latitude:</b> 8.44<br>                 <b>Longitude:</b> 126.59<br>                 <b>Date and Time:</b> 12/3/2023 10:37<br>                 <b>Intensity:</b> I-VII <br>                                  <button onclick="openSidePanel('7.4', '8.44, 126.59', 8.44, 126.59, '12/3/2023 10:37', 'I-VII ', 'https://i.imgur.com/dx1GFGh.png', 'https://i.imgur.com/VRNNkoh.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_25bbf1b878eff605e1895f70437decf0.setContent(html_bdf9d20ab500b24d534fb63e014d7afe);
             
         
 
-        marker_36542bba180f6e665b21b95d98a42eed.bindPopup(popup_5e2347ab0d5a7c7d377dba54c35feaea)
+        marker_e8f8df46ad875d74f839890c5ad7d467.bindPopup(popup_25bbf1b878eff605e1895f70437decf0)
         ;
 
         
     
     
-            var marker_8328d491294d4988302abc23610e01e5 = L.marker(
+            var marker_b80f5da7872b026246fad4363215a21e = L.marker(
                 [5.38, 125.24],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_26443d7e4bf29d5210a63878fca4a81a = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_8328d491294d4988302abc23610e01e5.setIcon(icon_26443d7e4bf29d5210a63878fca4a81a);
+        var custom_icon_e1bc60ed59e16ef5de85e7a0df1e3d09 = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_b80f5da7872b026246fad4363215a21e.setIcon(custom_icon_e1bc60ed59e16ef5de85e7a0df1e3d09);
         
     
-        var popup_a1144b57e55e91af61f781d0fb563a0a = L.popup({"maxWidth": 300});
+        var popup_63433e2ec41f72618cbae613a6389175 = L.popup({"maxWidth": 300});
 
         
             
-                var html_5a521b12b7e7738fcdb38fe4ae28b398 = $(`<div id="html_5a521b12b7e7738fcdb38fe4ae28b398" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.8<br>                 <b>Location:</b> 5.38, 125.24<br>                 <b>Latitude:</b> 5.38<br>                 <b>Longitude:</b> 125.24<br>                 <b>Date and Time:</b> 11/18/2023 0:14<br>                 <b>Intensity:</b> I-VII <br>                                  <button onclick="openSidePanel('6.8', '5.38, 125.24', 5.38, 125.24, '11/18/2023 0:14', 'I-VII ', 'https://i.imgur.com/w8oobUi.png', 'https://i.imgur.com/YQpOkK9.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_a1144b57e55e91af61f781d0fb563a0a.setContent(html_5a521b12b7e7738fcdb38fe4ae28b398);
+                var html_3c9ffb605d00cffde986de64a60cb274 = $(`<div id="html_3c9ffb605d00cffde986de64a60cb274" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.8<br>                 <b>Location:</b> 5.38, 125.24<br>                 <b>Latitude:</b> 5.38<br>                 <b>Longitude:</b> 125.24<br>                 <b>Date and Time:</b> 11/18/2023 0:14<br>                 <b>Intensity:</b> I-VII <br>                                  <button onclick="openSidePanel('6.8', '5.38, 125.24', 5.38, 125.24, '11/18/2023 0:14', 'I-VII ', 'https://i.imgur.com/mAdiqfE.png', 'https://i.imgur.com/Sdkd3kS.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_63433e2ec41f72618cbae613a6389175.setContent(html_3c9ffb605d00cffde986de64a60cb274);
             
         
 
-        marker_8328d491294d4988302abc23610e01e5.bindPopup(popup_a1144b57e55e91af61f781d0fb563a0a)
+        marker_b80f5da7872b026246fad4363215a21e.bindPopup(popup_63433e2ec41f72618cbae613a6389175)
         ;
 
         
     
     
-            var marker_2857eab593a6d3a69051b15a13970de3 = L.marker(
+            var marker_1183c625364652fa00d4f12611c75af9 = L.marker(
                 [8.49, 126.95],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_ed2f43fda78f4806cff65b8b9779fba8 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_2857eab593a6d3a69051b15a13970de3.setIcon(icon_ed2f43fda78f4806cff65b8b9779fba8);
+        var custom_icon_e8f777e4077620b5b879c3a320976f34 = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_1183c625364652fa00d4f12611c75af9.setIcon(custom_icon_e8f777e4077620b5b879c3a320976f34);
         
     
-        var popup_8585cc137c8d4b17508f9683f6f96335 = L.popup({"maxWidth": 300});
+        var popup_475ee1aa5833e4fca7657211b62ef861 = L.popup({"maxWidth": 300});
 
         
             
-                var html_eac7f8f556f9c2e4c77ea813ec89afff = $(`<div id="html_eac7f8f556f9c2e4c77ea813ec89afff" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.6<br>                 <b>Location:</b> 8.49, 126.95<br>                 <b>Latitude:</b> 8.49<br>                 <b>Longitude:</b> 126.95<br>                 <b>Date and Time:</b> 12/4/2023 18:35<br>                 <b>Intensity:</b> I-V<br>                                  <button onclick="openSidePanel('6.6', '8.49, 126.95', 8.49, 126.95, '12/4/2023 18:35', 'I-V', 'https://i.imgur.com/1UtnqMS.png', 'https://i.imgur.com/6mFtVD5.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_8585cc137c8d4b17508f9683f6f96335.setContent(html_eac7f8f556f9c2e4c77ea813ec89afff);
+                var html_292146f0a9050c18b0a61bff9e8322f7 = $(`<div id="html_292146f0a9050c18b0a61bff9e8322f7" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.6<br>                 <b>Location:</b> 8.49, 126.95<br>                 <b>Latitude:</b> 8.49<br>                 <b>Longitude:</b> 126.95<br>                 <b>Date and Time:</b> 12/4/2023 18:35<br>                 <b>Intensity:</b> I-V<br>                                  <button onclick="openSidePanel('6.6', '8.49, 126.95', 8.49, 126.95, '12/4/2023 18:35', 'I-V', 'https://i.imgur.com/m8TV1Kr.png', 'https://i.imgur.com/XDAF684.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_475ee1aa5833e4fca7657211b62ef861.setContent(html_292146f0a9050c18b0a61bff9e8322f7);
             
         
 
-        marker_2857eab593a6d3a69051b15a13970de3.bindPopup(popup_8585cc137c8d4b17508f9683f6f96335)
+        marker_1183c625364652fa00d4f12611c75af9.bindPopup(popup_475ee1aa5833e4fca7657211b62ef861)
         ;
 
         
     
     
-            var marker_8b35b8d709ed9a29ce56843fedd19930 = L.marker(
+            var marker_c51ec16719c7ea59bcc4be7a8f8236ef = L.marker(
                 [2.63, 126.95],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_fe67c83c8a064a8307b48a1317316cfd = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_8b35b8d709ed9a29ce56843fedd19930.setIcon(icon_fe67c83c8a064a8307b48a1317316cfd);
+        var custom_icon_3dbf4190ff171262a157048486542a1e = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_c51ec16719c7ea59bcc4be7a8f8236ef.setIcon(custom_icon_3dbf4190ff171262a157048486542a1e);
         
     
-        var popup_4edf8e5bff2ad205e98cd84a9d7b1ee2 = L.popup({"maxWidth": 300});
+        var popup_032bfabde6d9b18cebc9606505fa17a2 = L.popup({"maxWidth": 300});
 
         
             
-                var html_a83dfb0c096f1347ed0b2a8afb27c066 = $(`<div id="html_a83dfb0c096f1347ed0b2a8afb27c066" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 7.0<br>                 <b>Location:</b> 2.63, 126.95<br>                 <b>Latitude:</b> 2.63<br>                 <b>Longitude:</b> 126.95<br>                 <b>Date and Time:</b> 1/18/2023 22:06<br>                 <b>Intensity:</b> I-II<br>                                  <button onclick="openSidePanel('7.0', '2.63, 126.95', 2.63, 126.95, '1/18/2023 22:06', 'I-II', 'https://i.imgur.com/KStXMxm.png', 'https://i.imgur.com/LkrxOSl.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_4edf8e5bff2ad205e98cd84a9d7b1ee2.setContent(html_a83dfb0c096f1347ed0b2a8afb27c066);
+                var html_c386aeda32339c0c67cc03913c73cb14 = $(`<div id="html_c386aeda32339c0c67cc03913c73cb14" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 7.0<br>                 <b>Location:</b> 2.63, 126.95<br>                 <b>Latitude:</b> 2.63<br>                 <b>Longitude:</b> 126.95<br>                 <b>Date and Time:</b> 1/18/2023 23:03<br>                 <b>Intensity:</b> I-II<br>                                  <button onclick="openSidePanel('7.0', '2.63, 126.95', 2.63, 126.95, '1/18/2023 23:03', 'I-II', 'https://i.imgur.com/E8Q86Bp.png', 'https://i.imgur.com/r9Uu63b.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_032bfabde6d9b18cebc9606505fa17a2.setContent(html_c386aeda32339c0c67cc03913c73cb14);
             
         
 
-        marker_8b35b8d709ed9a29ce56843fedd19930.bindPopup(popup_4edf8e5bff2ad205e98cd84a9d7b1ee2)
+        marker_c51ec16719c7ea59bcc4be7a8f8236ef.bindPopup(popup_032bfabde6d9b18cebc9606505fa17a2)
         ;
 
         
     
     
-            var marker_286d2250553706d8d1c89bccebeb0a1b = L.marker(
+            var marker_a166d7d84053d2f30a13d79c39202f15 = L.marker(
                 [23.43, 121.57],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_84c8a350043a0806d27da14cc45c3e6d = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_286d2250553706d8d1c89bccebeb0a1b.setIcon(icon_84c8a350043a0806d27da14cc45c3e6d);
+        var custom_icon_2b0b79f34db80d1b502421c038579367 = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_a166d7d84053d2f30a13d79c39202f15.setIcon(custom_icon_2b0b79f34db80d1b502421c038579367);
         
     
-        var popup_0b92bf4ed99668f52be14a6e6ba8bf59 = L.popup({"maxWidth": 300});
+        var popup_3fb6d10764a235101dde3a1db7644352 = L.popup({"maxWidth": 300});
 
         
             
-                var html_8a3f9dea1a9af69e1e1e008bd8e36514 = $(`<div id="html_8a3f9dea1a9af69e1e1e008bd8e36514" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.7<br>                 <b>Location:</b> 23.43, 121.57<br>                 <b>Latitude:</b> 23.43<br>                 <b>Longitude:</b> 121.57<br>                 <b>Date and Time:</b> 3/23/2022 1:41<br>                 <b>Intensity:</b> III<br>                                  <button onclick="openSidePanel('6.7', '23.43, 121.57', 23.43, 121.57, '3/23/2022 1:41', 'III', 'https://i.imgur.com/AVsGE9t.png', 'https://i.imgur.com/QNT6hA8.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_0b92bf4ed99668f52be14a6e6ba8bf59.setContent(html_8a3f9dea1a9af69e1e1e008bd8e36514);
+                var html_547f268d70a31c4e7aae22937104a67e = $(`<div id="html_547f268d70a31c4e7aae22937104a67e" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.7<br>                 <b>Location:</b> 23.43, 121.57<br>                 <b>Latitude:</b> 23.43<br>                 <b>Longitude:</b> 121.57<br>                 <b>Date and Time:</b> 3/23/2022 1:41<br>                 <b>Intensity:</b> III<br>                                  <button onclick="openSidePanel('6.7', '23.43, 121.57', 23.43, 121.57, '3/23/2022 1:41', 'III', 'https://i.imgur.com/cmj1YdW.png', 'https://i.imgur.com/gO6EUxQ.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_3fb6d10764a235101dde3a1db7644352.setContent(html_547f268d70a31c4e7aae22937104a67e);
             
         
 
-        marker_286d2250553706d8d1c89bccebeb0a1b.bindPopup(popup_0b92bf4ed99668f52be14a6e6ba8bf59)
+        marker_a166d7d84053d2f30a13d79c39202f15.bindPopup(popup_3fb6d10764a235101dde3a1db7644352)
         ;
 
         
     
     
-            var marker_969deda1df6fcd0c28cdc414aba4b56c = L.marker(
+            var marker_cccb405c1692dba067f2a48ef4423d9c = L.marker(
                 [17.77, 120.72],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_59e3d88d2329b840fac8ce897ab54f07 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_969deda1df6fcd0c28cdc414aba4b56c.setIcon(icon_59e3d88d2329b840fac8ce897ab54f07);
+        var custom_icon_bf18b9aa5106406995090298d520c197 = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_cccb405c1692dba067f2a48ef4423d9c.setIcon(custom_icon_bf18b9aa5106406995090298d520c197);
         
     
-        var popup_5fde8b5c60ff2618f6cf6ef5d7712f2e = L.popup({"maxWidth": 300});
+        var popup_0141d5fe1cbd91db04ba8fa6d7df8535 = L.popup({"maxWidth": 300});
 
         
             
-                var html_bbdc2c3d1ac9e3061eea2ae95e75d9e1 = $(`<div id="html_bbdc2c3d1ac9e3061eea2ae95e75d9e1" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.4<br>                 <b>Location:</b> 17.77, 120.72<br>                 <b>Latitude:</b> 17.77<br>                 <b>Longitude:</b> 120.72<br>                 <b>Date and Time:</b> 10/26/2022 10:59<br>                 <b>Intensity:</b> I-VII<br>                                  <button onclick="openSidePanel('6.4', '17.77, 120.72', 17.77, 120.72, '10/26/2022 10:59', 'I-VII', 'https://i.imgur.com/PYjagSF.png', 'https://i.imgur.com/zTFhe2n.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_5fde8b5c60ff2618f6cf6ef5d7712f2e.setContent(html_bbdc2c3d1ac9e3061eea2ae95e75d9e1);
+                var html_74740c59ccdafaaaec64bbf5545f8d7a = $(`<div id="html_74740c59ccdafaaaec64bbf5545f8d7a" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.4<br>                 <b>Location:</b> 17.77, 120.72<br>                 <b>Latitude:</b> 17.77<br>                 <b>Longitude:</b> 120.72<br>                 <b>Date and Time:</b> 10/26/2022 10:59<br>                 <b>Intensity:</b> I-VII<br>                                  <button onclick="openSidePanel('6.4', '17.77, 120.72', 17.77, 120.72, '10/26/2022 10:59', 'I-VII', 'https://i.imgur.com/dRY132d.png', 'https://i.imgur.com/sPhaSzy.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_0141d5fe1cbd91db04ba8fa6d7df8535.setContent(html_74740c59ccdafaaaec64bbf5545f8d7a);
             
         
 
-        marker_969deda1df6fcd0c28cdc414aba4b56c.bindPopup(popup_5fde8b5c60ff2618f6cf6ef5d7712f2e)
+        marker_cccb405c1692dba067f2a48ef4423d9c.bindPopup(popup_0141d5fe1cbd91db04ba8fa6d7df8535)
         ;
 
         
     
     
-            var marker_0a548526649db5a697a5a894a18cacd0 = L.marker(
+            var marker_424bd41fed2b8eb313987814353df161 = L.marker(
                 [17.64, 120.63],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_5bdcabda7c1e24945e0a12c760faaed0 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_0a548526649db5a697a5a894a18cacd0.setIcon(icon_5bdcabda7c1e24945e0a12c760faaed0);
+        var custom_icon_259ca31e3dda5961b13de21850141af1 = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_424bd41fed2b8eb313987814353df161.setIcon(custom_icon_259ca31e3dda5961b13de21850141af1);
         
     
-        var popup_ac5ea973e3f39b8d08436e1fa7450470 = L.popup({"maxWidth": 300});
+        var popup_72bb97b115908223043ea0426ee62f85 = L.popup({"maxWidth": 300});
 
         
             
-                var html_b65ced99b8feb6204aea403efea3debb = $(`<div id="html_b65ced99b8feb6204aea403efea3debb" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 7.0<br>                 <b>Location:</b> 17.64, 120.63<br>                 <b>Latitude:</b> 17.64<br>                 <b>Longitude:</b> 120.63<br>                 <b>Date and Time:</b> 7/27/2022 16:43<br>                 <b>Intensity:</b> I-VII<br>                                  <button onclick="openSidePanel('7.0', '17.64, 120.63', 17.64, 120.63, '7/27/2022 16:43', 'I-VII', 'https://i.imgur.com/W2sKZi0.png', 'https://i.imgur.com/gxxGndk.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_ac5ea973e3f39b8d08436e1fa7450470.setContent(html_b65ced99b8feb6204aea403efea3debb);
+                var html_76062d4cd132ba0a9620ba8b2968dc56 = $(`<div id="html_76062d4cd132ba0a9620ba8b2968dc56" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 7.0<br>                 <b>Location:</b> 17.64, 120.63<br>                 <b>Latitude:</b> 17.64<br>                 <b>Longitude:</b> 120.63<br>                 <b>Date and Time:</b> 7/27/2022 8:43<br>                 <b>Intensity:</b> I-VII<br>                                  <button onclick="openSidePanel('7.0', '17.64, 120.63', 17.64, 120.63, '7/27/2022 8:43', 'I-VII', 'https://i.imgur.com/bffOBJv.png', 'https://i.imgur.com/Gobx9Pq.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_72bb97b115908223043ea0426ee62f85.setContent(html_76062d4cd132ba0a9620ba8b2968dc56);
             
         
 
-        marker_0a548526649db5a697a5a894a18cacd0.bindPopup(popup_ac5ea973e3f39b8d08436e1fa7450470)
+        marker_424bd41fed2b8eb313987814353df161.bindPopup(popup_72bb97b115908223043ea0426ee62f85)
         ;
 
         
     
     
-            var marker_ef4cd5427f3b1f4ed01bd390bda98963 = L.marker(
+            var marker_9594321376a8e8b898e5e394305ff372 = L.marker(
                 [8.96, 126.91],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_2b384c81f1080c0abbf9f1779aa672ef = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_ef4cd5427f3b1f4ed01bd390bda98963.setIcon(icon_2b384c81f1080c0abbf9f1779aa672ef);
+        var custom_icon_0e1d60f379b66ec9aff57e18e7e2f35f = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_9594321376a8e8b898e5e394305ff372.setIcon(custom_icon_0e1d60f379b66ec9aff57e18e7e2f35f);
         
     
-        var popup_5d5c0d8796694d9231edb5930ea1b98b = L.popup({"maxWidth": 300});
+        var popup_eca77f851b002b564b1412a10a127fdc = L.popup({"maxWidth": 300});
 
         
             
-                var html_23c4a1c814aa75c3ab471a04c33555f8 = $(`<div id="html_23c4a1c814aa75c3ab471a04c33555f8" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.8<br>                 <b>Location:</b> 8.96, 126.91<br>                 <b>Latitude:</b> 8.96<br>                 <b>Longitude:</b> 126.91<br>                 <b>Date and Time:</b> 12/4/2023 11:49<br>                 <b>Intensity:</b> I-V<br>                                  <button onclick="openSidePanel('6.8', '8.96, 126.91', 8.96, 126.91, '12/4/2023 11:49', 'I-V', 'https://i.imgur.com/zATDqS4.png', 'https://i.imgur.com/x3MmZQ7.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_5d5c0d8796694d9231edb5930ea1b98b.setContent(html_23c4a1c814aa75c3ab471a04c33555f8);
+                var html_eeb96f9259d5a2bfcb14044e24d3eb7c = $(`<div id="html_eeb96f9259d5a2bfcb14044e24d3eb7c" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.8<br>                 <b>Location:</b> 8.96, 126.91<br>                 <b>Latitude:</b> 8.96<br>                 <b>Longitude:</b> 126.91<br>                 <b>Date and Time:</b> 12/4/2023 3:49<br>                 <b>Intensity:</b> I-V<br>                                  <button onclick="openSidePanel('6.8', '8.96, 126.91', 8.96, 126.91, '12/4/2023 3:49', 'I-V', 'https://i.imgur.com/cAYy8wF.png', 'https://i.imgur.com/h0G85l8.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_eca77f851b002b564b1412a10a127fdc.setContent(html_eeb96f9259d5a2bfcb14044e24d3eb7c);
             
         
 
-        marker_ef4cd5427f3b1f4ed01bd390bda98963.bindPopup(popup_5d5c0d8796694d9231edb5930ea1b98b)
+        marker_9594321376a8e8b898e5e394305ff372.bindPopup(popup_eca77f851b002b564b1412a10a127fdc)
         ;
 
         
     
     
-            var marker_6adffe425099692f96ab5e9798416bfe = L.marker(
+            var marker_a9bba78ed72ed00f5e1b4f413fd10347 = L.marker(
                 [14.05, 119.11],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_0898698ba979c1840eb55f8696ca1014 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_6adffe425099692f96ab5e9798416bfe.setIcon(icon_0898698ba979c1840eb55f8696ca1014);
+        var custom_icon_6f20f21d69ad775621846b57bda2f4b1 = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_a9bba78ed72ed00f5e1b4f413fd10347.setIcon(custom_icon_6f20f21d69ad775621846b57bda2f4b1);
         
     
-        var popup_7208787ed3fface572bf8c109be9d0bb = L.popup({"maxWidth": 300});
+        var popup_bc5d7c37dc43add2dd4b989bda36b4a6 = L.popup({"maxWidth": 300});
 
         
             
-                var html_a77665d8e6883ae119cd780863fd0ea3 = $(`<div id="html_a77665d8e6883ae119cd780863fd0ea3" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.4<br>                 <b>Location:</b> 14.05, 119.11<br>                 <b>Latitude:</b> 14.05<br>                 <b>Longitude:</b> 119.11<br>                 <b>Date and Time:</b> 3/14/2022 5:05<br>                 <b>Intensity:</b> I-IV<br>                                  <button onclick="openSidePanel('6.4', '14.05, 119.11', 14.05, 119.11, '3/14/2022 5:05', 'I-IV', 'https://i.imgur.com/KRYXFWW.png', 'https://i.imgur.com/5NSc4a5.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_7208787ed3fface572bf8c109be9d0bb.setContent(html_a77665d8e6883ae119cd780863fd0ea3);
+                var html_e19555a8e131a4c08b2b8e424631925d = $(`<div id="html_e19555a8e131a4c08b2b8e424631925d" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.4<br>                 <b>Location:</b> 14.05, 119.11<br>                 <b>Latitude:</b> 14.05<br>                 <b>Longitude:</b> 119.11<br>                 <b>Date and Time:</b> 3/14/2022 5:05<br>                 <b>Intensity:</b> I-IV<br>                                  <button onclick="openSidePanel('6.4', '14.05, 119.11', 14.05, 119.11, '3/14/2022 5:05', 'I-IV', 'https://i.imgur.com/X1s96LE.png', 'https://i.imgur.com/uMwVU7h.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_bc5d7c37dc43add2dd4b989bda36b4a6.setContent(html_e19555a8e131a4c08b2b8e424631925d);
             
         
 
-        marker_6adffe425099692f96ab5e9798416bfe.bindPopup(popup_7208787ed3fface572bf8c109be9d0bb)
+        marker_a9bba78ed72ed00f5e1b4f413fd10347.bindPopup(popup_bc5d7c37dc43add2dd4b989bda36b4a6)
         ;
 
         
     
     
-            var marker_d39dee306bafb867f4e77d07f04e9989 = L.marker(
+            var marker_d2601ffbcd543b42884842456e1d3049 = L.marker(
                 [3.18, 128.13],
                 {}
-            ).addTo(map_a357892d771943686db6d5eabd3924ab);
+            ).addTo(map_7364c3900fdda12f31b1d46e887ef0c2);
         
     
-            var icon_4f6b1f771df88c83a8469ee68beb0ddb = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_d39dee306bafb867f4e77d07f04e9989.setIcon(icon_4f6b1f771df88c83a8469ee68beb0ddb);
+        var custom_icon_6a61bac9be13958c0eabfec6a3bd1f45 = L.icon({"iconSize": [50, 75], "iconUrl": "https://i.imgur.com/MW3nQKY.png"});
+        marker_d2601ffbcd543b42884842456e1d3049.setIcon(custom_icon_6a61bac9be13958c0eabfec6a3bd1f45);
         
     
-        var popup_0d80ffee77ec25ca376f5929a9b7a6b5 = L.popup({"maxWidth": 300});
+        var popup_2590622bd861a6ceb0f8e5c6138ba156 = L.popup({"maxWidth": 300});
 
         
             
-                var html_db48d8d774a6c777b466dc196d8e4763 = $(`<div id="html_db48d8d774a6c777b466dc196d8e4763" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.4<br>                 <b>Location:</b> 3.18, 128.13<br>                 <b>Latitude:</b> 3.18<br>                 <b>Longitude:</b> 128.13<br>                 <b>Date and Time:</b> 2/24/2023 16:02<br>                 <b>Intensity:</b> I-II<br>                                  <button onclick="openSidePanel('6.4', '3.18, 128.13', 3.18, 128.13, '2/24/2023 16:02', 'I-II', 'https://i.imgur.com/IIFz8GX.png', 'https://i.imgur.com/pnOHUAr.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
-                popup_0d80ffee77ec25ca376f5929a9b7a6b5.setContent(html_db48d8d774a6c777b466dc196d8e4763);
+                var html_7d547d4678bd4e4fefe6d7bc870d5c60 = $(`<div id="html_7d547d4678bd4e4fefe6d7bc870d5c60" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px; line-height: 1.2; padding: 0;">                 <b>Earthquake Information</b><br>                 <b>Magnitude:</b> 6.4<br>                 <b>Location:</b> 3.18, 128.13<br>                 <b>Latitude:</b> 3.18<br>                 <b>Longitude:</b> 128.13<br>                 <b>Date and Time:</b> 2/24/2023 16:02<br>                 <b>Intensity:</b> I-II<br>                                  <button onclick="openSidePanel('6.4', '3.18, 128.13', 3.18, 128.13, '2/24/2023 16:02', 'I-II', 'https://i.imgur.com/qTlcjgm.png', 'https://i.imgur.com/VB1Khtb.png')" style="                     background-color: #008348;                     color: white;                     padding: 5px 10px;                     border: none;                     border-radius: 4px;                     cursor: pointer;                     margin: 5px 0;                     width: 100%; /* Makes the button a full-width rectangle */                     text-align: center;                     font-size: 13px;                     font-weight: bold;                 ">Earthquake Disaster Risk Preparedness</button>             </div>         </div>`)[0];
+                popup_2590622bd861a6ceb0f8e5c6138ba156.setContent(html_7d547d4678bd4e4fefe6d7bc870d5c60);
             
         
 
-        marker_d39dee306bafb867f4e77d07f04e9989.bindPopup(popup_0d80ffee77ec25ca376f5929a9b7a6b5)
+        marker_d2601ffbcd543b42884842456e1d3049.bindPopup(popup_2590622bd861a6ceb0f8e5c6138ba156)
         ;
 
         
